@@ -1379,7 +1379,7 @@
                       <div class="items__container">
                         <!-- single item -->
                         <div class="item item-regular text">
-                          <a class="item__text" href="mailto:contact@unavia.world?subject=I've%got%20an%20idea">Got an idea?</a>
+                          <a class="item__text" href="mailto:contact@unavia.world?subject=I've%20got%20an%20idea">Got an idea?</a>
                           <div class="item__image">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.3 93.1" fill="currentColor">
                               <g>
@@ -1578,6 +1578,7 @@
       var form = document.getElementById('contact-form');
       var formContainer = document.querySelector('.form-container');
       var formReply = document.querySelector('.form__reply');
+      var sectionTitle = document.querySelector('.section-form-title');
       
       // Make sure the reply is initially hidden
       formReply.style.display = 'none';
@@ -1587,7 +1588,7 @@
       formReply.style.border = '1px solid #4CAF50';
       formReply.style.padding = '40px 30px';
       formReply.style.borderRadius = '8px';
-      formReply.style.margin = '40px 0';
+      formReply.style.margin = '80px 0 40px 0'; // Increased top margin
       formReply.style.position = 'relative';
       formReply.style.zIndex = '10';
       
@@ -1648,27 +1649,37 @@
       });
       
       function showSuccess() {
-        // Clear the form container content and show success
-        formContainer.innerHTML = '';
-        formContainer.appendChild(formReply);
-        formReply.style.display = 'block';
+        // Instead of replacing the container content, just hide the form and show the message
+        form.style.display = 'none';
         
-        // Force the form reply to be visible
+        // Move the success message to after the section title if it exists
+        if (sectionTitle) {
+          // Create a new container for the success message
+          var successContainer = document.createElement('div');
+          successContainer.style.marginTop = '100px'; // Add space between title and success message
+          successContainer.appendChild(formReply);
+          
+          // Insert after the section title
+          sectionTitle.parentNode.insertBefore(successContainer, sectionTitle.nextSibling);
+        }
+        
+        // Show the success message
+        formReply.style.display = 'block';
         formReply.style.visibility = 'visible';
         formReply.style.opacity = '1';
         
-        // Scroll to the success message
-        formReply.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // Add space between the title and success message
+        formReply.style.paddingTop = '40px';
+        
+        // Scroll to the success message with offset to position it lower
+        setTimeout(function() {
+          window.scrollTo({
+            top: formReply.offsetTop - 200, // Add offset to position it lower
+            behavior: 'smooth'
+          });
+        }, 100);
         
         console.log("Success message should now be visible");
-        
-        // Log form data in development
-        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-          var formData = new FormData(form);
-          for (var pair of formData.entries()) {
-            console.log(pair[0] + ': ' + pair[1]);
-          }
-        }
       }
     });
   </script>
