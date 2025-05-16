@@ -1590,8 +1590,29 @@
       // Get the form reply element
       var formReply = document.querySelector('.form__reply');
       
-      // Initially hide the reply
+      // Style the form reply for success
       formReply.style.display = 'none';
+      formReply.style.backgroundColor = 'rgba(76, 175, 80, 0.1)'; // Light green background
+      formReply.style.border = '1px solid #4CAF50'; // Green border
+      formReply.style.padding = '30px';
+      formReply.style.borderRadius = '8px';
+      formReply.style.margin = '40px 0';
+      
+      // Update the icon and text
+      var replyIcon = formReply.querySelector('.reply__icon');
+      replyIcon.classList.remove('ph-thin', 'ph-smiley');
+      replyIcon.classList.add('ph', 'ph-check-circle');
+      replyIcon.style.color = '#4CAF50';
+      replyIcon.style.fontSize = '48px';
+      
+      var replyTitle = formReply.querySelector('.reply__title');
+      replyTitle.textContent = 'Thank you!';
+      replyTitle.style.color = '#4CAF50';
+      replyTitle.style.fontSize = '24px';
+      replyTitle.style.margin = '15px 0';
+      
+      var replyText = formReply.querySelector('.reply__text');
+      replyText.textContent = 'Your application to join the Founding Circle has been received. We'll be in touch soon.';
       
       // Restore the action
       form.setAttribute('action', formAction);
@@ -1635,17 +1656,11 @@
       });
       
       function showSuccess() {
-        // Hide form fields but keep the container
-        var formFields = form.querySelectorAll('input, textarea, button');
-        formFields.forEach(function(field) {
-          field.style.display = 'none';
-        });
+        // Hide the form
+        form.style.display = 'none';
         
         // Show success message
         formReply.style.display = 'block';
-        
-        // Also add some margin to the reply to maintain spacing
-        formReply.style.margin = '40px 0';
         
         // Log form data in development
         if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
