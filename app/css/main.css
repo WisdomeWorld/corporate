@@ -197,7 +197,7 @@
 /* Template Backgrounds Start */
 /* ------------------------------------------------*/
 .main-image-1 {
-  background-image: url("https://cdn.mos.cms.futurecdn.net/v2/t:0,l:160,cw:960,ch:720,q:80,w:960/FaWKMJQnr2PFcYCmEyfiTm.jpg");
+  background-image: url("https://dummyimage.com/1400x1000/414141/636363");
 }
 
 .main-image-2 {
@@ -1124,6 +1124,67 @@ blockquote {
   }
 }
 
+
+.btn-line2 {
+  -webkit-box-pack: start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font: normal var(--font-weight-medium) 1.8rem/1.4 var(--_font-default);
+  color: white;
+}
+.btn-line2 .btn-caption,
+.btn-line2 i {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.btn-line2 i {
+  font-size: 2.3rem;
+  overflow: hidden;
+}
+.btn-line2.icon-left .btn-caption {
+  margin-left: 1rem;
+}
+.btn-line2.icon-right .btn-caption {
+  margin-right: 1rem;
+}
+.btn-line2:hover {
+  color: rgba(255, 255, 255, 0.751);
+}
+@media only screen and (min-width: 1200px) {
+  .btn-line2 {
+    font-size: 2rem;
+  }
+  .btn-line2 i {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .btn-line2 {
+    font-size: 2.2rem;
+  }
+  .btn-line2 i {
+    font-size: 2.7rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .btn-line2 {
+    font-size: 2.6rem;
+  }
+  .btn-line2 i {
+    font-size: 3.2rem;
+  }
+}
+
+
+
+
+
+
+
 .btn-default {
   width: 100%;
   height: 10rem;
@@ -1205,6 +1266,94 @@ blockquote {
   .no-touch .hover-default:hover em {
     width: 225%;
     height: 22.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hover-default-small {
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: color 0.3s 0s, background-color 0s 0s, -webkit-transform 0.3s ease-in-out;
+    transition: color 0.3s 0s, background-color 0s 0s, -webkit-transform 0.3s ease-in-out;
+    -moz-transition: color 0.3s 0s, background-color 0s 0s, transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
+    transition: color 0.3s 0s, background-color 0s 0s, transform 0.3s ease-in-out;
+    transition: color 0.3s 0s, background-color 0s 0s, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
+  }
+  .hover-default-small em {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    -moz-border-radius: 50%;
+         border-radius: 50%;
+    background-color: var(--base);
+    -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .no-touch .hover-default-small:hover {
+    color: var(--t-bright);
+    background-color: var(--base);
+    -webkit-transition: color 0.3s 0s, background-color 0.3s 0.2s, -webkit-box-shadow 0.5s, -webkit-transform 0.3s ease-in-out;
+    transition: color 0.3s 0s, background-color 0.3s 0.2s, -webkit-box-shadow 0.5s, -webkit-transform 0.3s ease-in-out;
+    -moz-transition: color 0.3s 0s, background-color 0.3s 0.2s, box-shadow 0.5s, transform 0.3s ease-in-out, -moz-box-shadow 0.5s, -moz-transform 0.3s ease-in-out;
+    transition: color 0.3s 0s, background-color 0.3s 0.2s, box-shadow 0.5s, transform 0.3s ease-in-out;
+    transition: color 0.3s 0s, background-color 0.3s 0.2s, box-shadow 0.5s, transform 0.3s ease-in-out, -webkit-box-shadow 0.5s, -moz-box-shadow 0.5s, -webkit-transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
+  }
+  .no-touch .hover-default-small:hover em {
+    width: 225%;
+    height: 11.25rem;
+  }
+}
+
+.btn-default-small {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid var(--neutral-bright);
+  -moz-border-radius: var(--_radius-s);
+       border-radius: var(--_radius-s);
+  background-color: var(--neutral-bright);
+  font: normal 500 1.8rem var(--_font-default);
+  color: var(--t-opp-bright);
+}
+.btn-default-small .btn-caption {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .btn-default-small {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .btn-default-small {
+    width: auto;
+    padding: 0 2rem;
+    font-size: 1.6rem;
+  }
+  .btn-default-small .btn-caption,
+  .btn-default-small i {
+    display: block;
+    position: relative;
+  }
+  .btn-default-small .btn-caption {
+    margin-right: 1rem;
+  }
+  .btn-default-small i {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .btn-default-small {
+    height: 5rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .btn-default-small {
+    font-size: 1.8rem;
   }
 }
 
@@ -3947,132 +4096,6 @@ form textarea:required:valid {
   }
 }
 
-.top-controls {
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: auto;
-  height: 4rem;
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
-  -moz-border-radius: var(--_radius-s);
-       border-radius: var(--_radius-s);
-  overflow: hidden;
-  z-index: 100;
-}
-
-@media only screen and (min-width: 1200px) {
-  .hover-default-small {
-    position: relative;
-    overflow: hidden;
-    -webkit-transition: color 0.3s 0s, background-color 0s 0s, -webkit-transform 0.3s ease-in-out;
-    transition: color 0.3s 0s, background-color 0s 0s, -webkit-transform 0.3s ease-in-out;
-    -moz-transition: color 0.3s 0s, background-color 0s 0s, transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
-    transition: color 0.3s 0s, background-color 0s 0s, transform 0.3s ease-in-out;
-    transition: color 0.3s 0s, background-color 0s 0s, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
-  }
-  .hover-default-small em {
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    -moz-border-radius: 50%;
-         border-radius: 50%;
-    background-color: var(--base);
-    -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
-    -moz-transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
-    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
-    -webkit-transform: translate(-50%, -50%);
-       -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
-  .no-touch .hover-default-small:hover {
-    color: var(--t-bright);
-    background-color: var(--base);
-    -webkit-transition: color 0.3s 0s, background-color 0.3s 0.2s, -webkit-box-shadow 0.5s, -webkit-transform 0.3s ease-in-out;
-    transition: color 0.3s 0s, background-color 0.3s 0.2s, -webkit-box-shadow 0.5s, -webkit-transform 0.3s ease-in-out;
-    -moz-transition: color 0.3s 0s, background-color 0.3s 0.2s, box-shadow 0.5s, transform 0.3s ease-in-out, -moz-box-shadow 0.5s, -moz-transform 0.3s ease-in-out;
-    transition: color 0.3s 0s, background-color 0.3s 0.2s, box-shadow 0.5s, transform 0.3s ease-in-out;
-    transition: color 0.3s 0s, background-color 0.3s 0.2s, box-shadow 0.5s, transform 0.3s ease-in-out, -webkit-box-shadow 0.5s, -moz-box-shadow 0.5s, -webkit-transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
-  }
-  .no-touch .hover-default-small:hover em {
-    width: 225%;
-    height: 11.25rem;
-  }
-}
-
-.btn-default-small {
-  width: 4rem;
-  height: 4rem;
-  border: 1px solid var(--neutral-bright);
-  -moz-border-radius: var(--_radius-s);
-       border-radius: var(--_radius-s);
-  background-color: var(--neutral-bright);
-  font: normal 500 1.8rem var(--_font-default);
-  color: var(--t-opp-bright);
-}
-.btn-default-small .btn-caption {
-  display: none;
-}
-@media only screen and (min-width: 768px) {
-  .btn-default-small {
-    font-size: 2.2rem;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .btn-default-small {
-    width: auto;
-    padding: 0 2rem;
-    font-size: 1.6rem;
-  }
-  .btn-default-small .btn-caption,
-  .btn-default-small i {
-    display: block;
-    position: relative;
-  }
-  .btn-default-small .btn-caption {
-    margin-right: 1rem;
-  }
-  .btn-default-small i {
-    font-size: 1.8rem;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .btn-default-small {
-    height: 5rem;
-  }
-}
-@media only screen and (min-width: 1600px) {
-  .btn-default-small {
-    font-size: 1.8rem;
-  }
-}
-
-
-@media only screen and (min-width: 768px) {
-  .top-controls {
-    top: 3rem;
-    right: 5rem;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .top-controls {
-    height: 5rem;
-  }
-}
 /* ------------------------------------------------*/
 /* Blocks Common End */
 /* ------------------------------------------------*/
@@ -4223,6 +4246,43 @@ form textarea:required:valid {
   }
 }
 
+.top-controls {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  height: 4rem;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  -moz-border-radius: var(--_radius-s);
+       border-radius: var(--_radius-s);
+  overflow: hidden;
+  z-index: 100;
+}
+@media only screen and (min-width: 768px) {
+  .top-controls {
+    top: 3rem;
+    right: 5rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .top-controls {
+    height: 5rem;
+  }
+}
+
 .color-switcher {
   position: relative;
   display: -webkit-inline-box;
@@ -4283,6 +4343,9 @@ form textarea:required:valid {
     height: 2.6rem;
   }
 }
+
+
+
 
 .header-offset {
   display: -webkit-box;
@@ -6549,7 +6612,7 @@ form textarea:required:valid {
 .testimonials-card {
   padding: 3rem;
   background-color: var(--base);
-  border: 1px solid var(--stroke-elements);
+  border: 3px solid var(--stroke-elements);
   -moz-border-radius: var(--_radius);
        border-radius: var(--_radius);
 }
