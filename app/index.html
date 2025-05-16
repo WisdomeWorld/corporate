@@ -1266,8 +1266,9 @@
                       <form class="form contact-form" id="contact-form" action="https://formsubmit.co/contact@wisdome.world" method="POST">
                         <!-- FormSubmit configuration fields -->
                         <input type="hidden" name="_subject" value="Unavia Founding Circle Application">
-                        <input type="hidden" name="_next" value="https://your-thank-you-page.com">
-                        <input type="hidden" name="_captcha" value="false"> <!-- Optional: disable captcha -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- Add this hidden field to enable AJAX -->
+                        <input type="hidden" name="_ajax" value="true">
                         
                         <div class="container-fluid p-0">
                           <div class="row gx-0">
@@ -1579,7 +1580,7 @@
       // Store the original action
       var formAction = form.getAttribute('action');
       
-      // Completely remove any existing event listeners (brutal but effective)
+      // Remove any existing event listeners
       var formClone = form.cloneNode(true);
       form.parentNode.replaceChild(formClone, form);
       
@@ -1589,30 +1590,59 @@
       // Restore the action
       form.setAttribute('action', formAction);
       
-      // Add our new event listener
+      // Add our event listener
       form.addEventListener('submit', function(e) {
-        // If we're in development (localhost)
+        e.preventDefault();
+        
+        // If in development mode (localhost)
         if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-          e.preventDefault();
-          
-          // Show success message
-          document.querySelector('.form__reply').style.display = 'block';
-          
-          // Hide form
-          document.querySelector('.contact-form').style.display = 'none';
-          
+          showSuccess();
           console.log('Form submitted successfully (development mode)');
-          
-          // Log form data
+          return false;
+        }
+        
+        // In production, submit via AJAX
+        var formData = new FormData(form);
+        
+        fetch(formAction, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        })
+        .then(response => response.json())
+        .then(data => {
+          if (data.success === 'true') {
+            showSuccess();
+          } else {
+            console.error('Form submission error:', data);
+            alert('There was an error submitting the form. Please try again.');
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          showSuccess(); // Show success anyway, as FormSubmit might still process it
+        });
+        
+        return false;
+      });
+      
+      function showSuccess() {
+        // Show success message
+        document.querySelector('.form__reply').style.display = 'block';
+        
+        // Hide form
+        document.querySelector('.contact-form').style.display = 'none';
+        
+        // Log form data in development
+        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
           var formData = new FormData(form);
           for (var pair of formData.entries()) {
             console.log(pair[0] + ': ' + pair[1]);
           }
-          
-          return false;
         }
-        // In production, let the form submit normally to FormSubmit
-      });
+      }
     });
   </script>
 </html>

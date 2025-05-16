@@ -6612,7 +6612,7 @@ form textarea:required:valid {
 .testimonials-card {
   padding: 3rem;
   background-color: var(--base);
-  border: 3px solid var(--stroke-elements);
+  border: 1px solid var(--stroke-elements);
   -moz-border-radius: var(--_radius);
        border-radius: var(--_radius);
 }
