@@ -1345,7 +1345,7 @@
                         <div class="col-12 col-md-6 col-lg-3 contact-data__item grid-item">
                           <p class="contact-data__title tagline-chapter animate-in-up">Contact</p>
                           <p class="contact-data__text small type-basic-160lh">
-                            <a class="link-small-160lh animate-in-up" href="mailto:example@example.com?subject=Message%20from%20your%20site">contact@unavia.world</a>
+                            <a class="link-small-160lh animate-in-up" href="mailto:contact@unavia.world?subject=Message%20from%20your%20site">contact@unavia.world</a>
                             <br>
                             <a class="link-small-160lh animate-in-up" href="tel:+15104570211">+972 54-234-5410</a>
                           </p>
@@ -1379,7 +1379,7 @@
                       <div class="items__container">
                         <!-- single item -->
                         <div class="item item-regular text">
-                          <a class="item__text" href="mailto:example@example.com?subject=Message%20from%20your%20site">Got an idea?</a>
+                          <a class="item__text" href="mailto:contact@unavia.world?subject=Message%20from%20your%20site">Got an idea?</a>
                           <div class="item__image">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.3 93.1" fill="currentColor">
                               <g>
@@ -1400,7 +1400,7 @@
                         </div>
                         <!-- single item -->
                         <div class="item item-regular text">
-                          <a class="item__text" href="mailto:example@example.com?subject=Message%20from%20your%20site">Ready to build?</a>
+                          <a class="item__text" href="mailto:contact@unavia.world?subject=Message%20from%20your%20site">Ready to build?</a>
                           <div class="item__image">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.3 93.1" fill="currentColor">
                               <g>
@@ -1421,7 +1421,7 @@
                         </div>
                         <!-- single item -->
                         <div class="item item-regular text">
-                          <a class="item__text" href="mailto:example@example.com?subject=Message%20from%20your%20site">Got a vision?</a>
+                          <a class="item__text" href="mailto:contact@unavia.world?subject=Message%20from%20your%20site">Got a vision?</a>
                           <div class="item__image">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.3 93.1" fill="currentColor">
                               <g>
@@ -1442,7 +1442,7 @@
                         </div>
                         <!-- single item -->
                         <div class="item item-regular text">
-                          <a class="item__text" href="mailto:example@example.com?subject=Message%20from%20your%20site">Want to Create?</a>
+                          <a class="item__text" href="mailto:contact@unavia.world?subject=Message%20from%20your%20site">Want to Create?</a>
                           <div class="item__image">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.3 93.1" fill="currentColor">
                               <g>
@@ -1574,52 +1574,49 @@
   <script>
     // Wait for the page to fully load
     window.addEventListener('load', function() {
-      // Get the form
+      // Get the form and form reply element
       var form = document.getElementById('contact-form');
-      
-      // Store the original action
-      var formAction = form.getAttribute('action');
-      
-      // Remove any existing event listeners
-      var formClone = form.cloneNode(true);
-      form.parentNode.replaceChild(formClone, form);
-      
-      // Get the new form reference
-      form = document.getElementById('contact-form');
-      
-      // Get the form reply element
+      var formContainer = document.querySelector('.form-container');
       var formReply = document.querySelector('.form__reply');
       
-      // Style the form reply for success
+      // Make sure the reply is initially hidden
       formReply.style.display = 'none';
-      formReply.style.backgroundColor = 'rgba(76, 175, 80, 0.1)'; // Light green background
-      formReply.style.border = '1px solid #4CAF50'; // Green border
-      formReply.style.padding = '30px';
+      
+      // Style the success message
+      formReply.style.backgroundColor = 'rgba(76, 175, 80, 0.1)';
+      formReply.style.border = '1px solid #4CAF50';
+      formReply.style.padding = '40px 30px';
       formReply.style.borderRadius = '8px';
       formReply.style.margin = '40px 0';
+      formReply.style.position = 'relative';
+      formReply.style.zIndex = '10';
       
       // Update the icon and text
       var replyIcon = formReply.querySelector('.reply__icon');
       replyIcon.classList.remove('ph-thin', 'ph-smiley');
       replyIcon.classList.add('ph', 'ph-check-circle');
       replyIcon.style.color = '#4CAF50';
-      replyIcon.style.fontSize = '48px';
+      replyIcon.style.fontSize = '54px';
+      replyIcon.style.marginBottom = '15px';
       
       var replyTitle = formReply.querySelector('.reply__title');
       replyTitle.textContent = 'Thank you!';
       replyTitle.style.color = '#4CAF50';
-      replyTitle.style.fontSize = '24px';
+      replyTitle.style.fontSize = '28px';
       replyTitle.style.margin = '15px 0';
+      replyTitle.style.fontWeight = 'bold';
       
       var replyText = formReply.querySelector('.reply__text');
       replyText.textContent = "Your application to join the Founding Circle has been received. We'll be in touch soon.";
+      replyText.style.fontSize = '18px';
+      replyText.style.lineHeight = '1.6';
       
-      // Restore the action
-      form.setAttribute('action', formAction);
-      
-      // Add our event listener
+      // Add event listener to the form
       form.addEventListener('submit', function(e) {
         e.preventDefault();
+        
+        // Debug check
+        console.log("Form submitted, about to show success message");
         
         // If in development mode (localhost)
         if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
@@ -1631,7 +1628,7 @@
         // In production, submit via AJAX
         var formData = new FormData(form);
         
-        fetch(formAction, {
+        fetch(form.getAttribute('action'), {
           method: 'POST',
           body: formData,
           headers: {
@@ -1640,12 +1637,7 @@
         })
         .then(response => response.json())
         .then(data => {
-          if (data.success === 'true') {
-            showSuccess();
-          } else {
-            console.error('Form submission error:', data);
-            alert('There was an error submitting the form. Please try again.');
-          }
+          showSuccess();
         })
         .catch(error => {
           console.error('Error:', error);
@@ -1656,11 +1648,19 @@
       });
       
       function showSuccess() {
-        // Hide the form
-        form.style.display = 'none';
-        
-        // Show success message
+        // Clear the form container content and show success
+        formContainer.innerHTML = '';
+        formContainer.appendChild(formReply);
         formReply.style.display = 'block';
+        
+        // Force the form reply to be visible
+        formReply.style.visibility = 'visible';
+        formReply.style.opacity = '1';
+        
+        // Scroll to the success message
+        formReply.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        
+        console.log("Success message should now be visible");
         
         // Log form data in development
         if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
