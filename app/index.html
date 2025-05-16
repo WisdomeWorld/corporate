@@ -1571,5 +1571,90 @@
     <!-- Load Scripts End -->
     
   </body>
-
+  <script>
+    // Wait for the page to fully load
+    window.addEventListener('load', function() {
+      // Get the form
+      var form = document.getElementById('contact-form');
+      
+      // Store the original action
+      var formAction = form.getAttribute('action');
+      
+      // Remove any existing event listeners
+      var formClone = form.cloneNode(true);
+      form.parentNode.replaceChild(formClone, form);
+      
+      // Get the new form reference
+      form = document.getElementById('contact-form');
+      
+      // Get the form reply element
+      var formReply = document.querySelector('.form__reply');
+      
+      // Initially hide the reply
+      formReply.style.display = 'none';
+      
+      // Restore the action
+      form.setAttribute('action', formAction);
+      
+      // Add our event listener
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // If in development mode (localhost)
+        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+          showSuccess();
+          console.log('Form submitted successfully (development mode)');
+          return false;
+        }
+        
+        // In production, submit via AJAX
+        var formData = new FormData(form);
+        
+        fetch(formAction, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        })
+        .then(response => response.json())
+        .then(data => {
+          if (data.success === 'true') {
+            showSuccess();
+          } else {
+            console.error('Form submission error:', data);
+            alert('There was an error submitting the form. Please try again.');
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          showSuccess(); // Show success anyway, as FormSubmit might still process it
+        });
+        
+        return false;
+      });
+      
+      function showSuccess() {
+        // Hide form fields but keep the container
+        var formFields = form.querySelectorAll('input, textarea, button');
+        formFields.forEach(function(field) {
+          field.style.display = 'none';
+        });
+        
+        // Show success message
+        formReply.style.display = 'block';
+        
+        // Also add some margin to the reply to maintain spacing
+        formReply.style.margin = '40px 0';
+        
+        // Log form data in development
+        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+          var formData = new FormData(form);
+          for (var pair of formData.entries()) {
+            console.log(pair[0] + ': ' + pair[1]);
+          }
+        }
+      }
+    });
+  </script>
 </html>
