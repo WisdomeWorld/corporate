@@ -1,7 +1,7 @@
 {
-  "name": "blayden",
+  "name": "Unavia",
   "version": "1.0.0",
-  "description": "Blayden - Personal Portfolio & Resume HTML Template",
+  "description": "Unavia",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
