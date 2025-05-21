@@ -7116,6 +7116,34 @@ form textarea:required:valid {
   }
 }
 
+.footer-signature {
+  padding: 20px 0;
+  border-top: 1px solid rgba(var(--neutral-rgb), 0.1);
+}
+
+.footer-signature p {
+  margin: 0;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.footer-signature:hover p {
+  opacity: 1;
+}
+
+.footer-signature .ph-heart {
+  display: inline-block;
+  margin: 0 3px;
+  animation: heartBeat 1.5s infinite ease-in-out;
+}
+
+@keyframes heartBeat {
+  0%, 100% { transform: scale(1); }
+  15% { transform: scale(1.2); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.2); }
+}
+
 /* ------------------------------------------------*/
 /* Features Contact Data End */
 /* ------------------------------------------------*/
