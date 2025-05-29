@@ -6093,7 +6093,7 @@ form textarea:required:valid {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 3rem;
+  /* padding-left: 3rem; */
   position: relative;
   overflow: hidden;
   -webkit-box-flex: 1;

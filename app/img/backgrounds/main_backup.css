@@ -6093,7 +6093,7 @@ form textarea:required:valid {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 3rem;
+  /* padding-left: 3rem; */
   position: relative;
   overflow: hidden;
   -webkit-box-flex: 1;
@@ -7119,3 +7119,94 @@ form textarea:required:valid {
 /* ------------------------------------------------*/
 /* Features Contact Data End */
 /* ------------------------------------------------*/
+/* Custom button style with consistent font size across all devices */
+.btn-custom-consistent {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: 0;
+  padding: 0 2rem;
+  font: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  user-select: none;
+  
+  /* Consistent sizing across all devices */
+  width: auto;
+  height: 4rem;
+  border: 1px solid var(--neutral-bright);
+  border-radius: var(--_radius-s);
+  background-color: var(--neutral-bright);
+  /* Use consistent 2rem font size like desktop */
+  font: normal var(--font-weight-medium) 1.6rem/4rem var(--_font-default);
+  color: var(--t-opp-bright);
+}
+
+/* Make sure caption and icon are always visible */
+.btn-custom-consistent .btn-caption,
+.btn-custom-consistent i {
+  display: block;
+  position: relative;
+}
+
+.btn-custom-consistent .btn-caption {
+  margin-right: 1rem;
+}
+
+.btn-custom-consistent i {
+  /* Keep icon size consistent too */
+  font-size: 1.8rem;
+}
+
+/* Only change styling, not font size on larger screens */
+@media only screen and (min-width: 1200px) {
+  .btn-custom-consistent {
+    border: 1px solid var(--stroke-controls);
+    background-color: transparent;
+    color: var(--t-bright);
+    /* Font size stays 2rem - no change */
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .btn-custom-consistent {
+    height: 5rem;
+    line-height: 5rem;
+    /* Font size stays 2rem - no change */
+  }
+}
+
+/* Hover effects for desktop */
+@media only screen and (min-width: 1200px) {
+  .btn-custom-consistent {
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s 0s, background-color 0s 0s, transform 0.3s ease-in-out;
+  }
+  
+  .btn-custom-consistent em {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: var(--t-bright);
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    transform: translate(-50%, -50%);
+  }
+  
+  .no-touch .btn-custom-consistent:hover {
+    color: var(--t-opp-bright);
+    background-color: var(--t-bright);
+    transition: color 0.3s 0s, background-color 0.3s 0.2s, box-shadow 0.5s, transform 0.3s ease-in-out;
+  }
+  
+  .no-touch .btn-custom-consistent:hover em {
+    width: 225%;
+    height: 11.25rem;
+  }
+}
+
