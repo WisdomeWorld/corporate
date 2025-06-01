@@ -5746,6 +5746,7 @@ form textarea:required:valid {
 .pswp__button--fs,
 .pswp__button--share {
   margin-right: 1rem;
+  visibility: hidden;
 }
 
 .pswp__button--close {
