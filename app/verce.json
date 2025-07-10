@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/businesses",
+      "destination": "/businesses.html"
+    },
+    {
+      "source": "/communities", 
+      "destination": "/communities.html"
+    },
+    {
+      "source": "/people",
+      "destination": "/people.html"
+    }
+  ]
+}

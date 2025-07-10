@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
 
     <!-- Page Title -->
-    <title>Unavia - From Content to Connection</title>
+    <title> Unavia - Interactive Communication Spaces  </title>
 
     <!-- Meta Tags -->
-    <meta name="description" content="Unavia is a digital ecosystem for creating immersive digital experiences — spaces where people connect, co-create, and explore together in real time.">
-    <meta name="keywords" content="Unavia, Unity Network, digital ecosystem, digital village, digital villages, mindful internet, social connection, co-creation, digital wellbeing, community platform, creative network, attention economy, human-first technology">
+    <meta name="description" content="אונביה היא פלטפורמה ליצירת מרחבים דיגיטליים אינטראקטיביים - מקומות שמרגישים אמיתיים ושבהם אנשים נפגשים, בונים יחד וחווים חוויות משמעותיות.">
+    <meta name="keywords" content="Unavia, אונאביה ,כפר דיגיטלי,כפרים דיגיטליים, רשת חברתית, אחדות, רשת אחדות, יצירה משותפת, קהילות, פלטפורמה לקהילות, יצירתיות, כלכלת קשב, חוויות דיגיטליות, חוויות, טכנולוגיה אנושית">
     <meta name="author" content="Unavia">
     <meta name="robots" content="index, follow">
 
@@ -27,22 +27,21 @@
     <!-- Facebook Metadata Start -->
     <meta property="og:image:height" content="1200">
     <meta property="og:image:width" content="1200">
-    <meta property="og:title" content="Unavia – The Internet, Reimagined as an Experience">
-    <meta property="og:description" content="Forget endless feeds. Unavia lets you build interactive digital spaces where people actually connect, participate, and return.">
-    <meta property="og:url" content="https://join.unavia.network">
-    <meta property="og:image" content="https://join.unavia.network/img/og-image.jpg">
+    <meta property="og:title" content="Unavia - Interactive Communication Spaces">
+    <meta property="og:description" content="אונביה היא פלטפורמה ליצירת מרחבים דיגיטליים אינטראקטיביים - מקומות שמרגישים אמיתיים ושבהם אנשים נפגשים, בונים יחד וחווים חוויות משמעותיות."/>
+    <meta property="og:url" content="https://he.unavia.network">
+    <meta property="og:image" content="https://he.unavia.network/img/og-image.jpg">
     <!-- Facebook Metadata End -->
     <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
-    <link rel="canonical" href="https://join.unavia.network/" />
 
-        <!-- Multilingual hreflang -->
-    <link rel="alternate" hreflang="he" href="https://he.unavia.network/" />
-    <link rel="alternate" hreflang="en" href="https://join.unavia.network/" />
-    
+    <!-- Multilingual hreflang -->
+    <link rel="alternate" hreflang="he" href="https://he.unavia.network" />
+    <link rel="alternate" hreflang="en" href="https://join.unavia.network" />
+
     <!-- Template Styles Start -->
     <link rel="stylesheet" type="text/css" href="css/loaders/loader.css">
-    <link rel="stylesheet" type="text/css" href="css/plugins.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins-demo.css">
+    <link rel="stylesheet" type="text/css" href="css/main-demo.css">
     <!-- Template Styles End -->
 
     <!-- Custom Browser Color Start -->
@@ -52,19 +51,12 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!-- Custom Browser Color End -->
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Unavia – The Internet, Reimagined as an Experience">
-    <meta name="twitter:description" content="Forget endless feeds. Unavia lets you build interactive digital spaces where people actually connect, participate, and return.">
-    <meta name="twitter:image" content="https://join.unavia.network/img/og-image.jpg">  
-
-
   </head>
 
-  <body>
+  <body class="demo">
 
     <!-- Loader Start -->
-    <div id="loader" class="loader">
+    <div id="loader" class="demo__loader">
       <div class="loader__wrapper">
         <div class="loader__content">
           <div class="loader__count">
@@ -77,50 +69,35 @@
     <!-- Loader End -->
 
     <!-- Header Start -->
-    <header id="header" class="header d-flex justify-content-center loading__fade">
+    <header id="header" class="demo__header d-flex justify-content-center loading__fade">
       <!-- Navigation Menu Start -->
       <div class="header__navigation d-flex justify-content-start">
         <nav id="menu" class="menu">
           <ul class="menu__list d-flex justify-content-start">
             <li class="menu__item">
-              <a class="menu__link btn" href="#home">
+              <a class="menu__link btn" href="#intro">
                 <span class="menu__caption">Home</span>
-                <i class="ph ph-house"></i>
+                <i class="ph ph-house-simple"></i>
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link btn" href="#problem">
-                <span class="menu__caption">Problem</span>
-                <i class="ph ph-ghost"></i>
+              <a class="menu__link btn" href="businesses">
+                <span class="menu__caption">Businesess</span>
+                <i class="ph ph-briefcase"></i>
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link btn" href="#solution">
-                <span class="menu__caption">Solution</span>
-                <i class="ph ph-lightbulb"></i>
-              </a>
-            </li>
-         
-        
-            <li class="menu__item">
-              <a class="menu__link btn" href="#founding">
-                <span class="menu__caption">Why</span>
+              <a class="menu__link btn" href="communities">
+                <span class="menu__caption">Communities</span>
                 <i class="ph ph-heart"></i>
               </a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link btn" href="#worlds">
-                <span class="menu__caption">What</span>
-                <i class="ph ph-planet"></i>
+              <!-- <li class="menu__item">
+              <a class="menu__link btn" href="">
+                <span class="menu__caption">אנשים</span>
+                <i class="ph ph-shopping-bag"></i>
               </a>
-            </li>
-              <li class="menu__item">
-              <a class="menu__link btn" href="#start">
-                <span class="menu__caption">How</span>
-                <i class="ph ph-check-circle"></i>
-              </a>
-            </li>
-       
+            </li> -->
           </ul>
         </nav>
       </div>
@@ -129,9 +106,10 @@
     <!-- Header End -->
 
     <!-- Fixed Logo Start -->
-    <div class="logo loading__fade">
-      <a href="#home" class="logo__link">
-        <!-- logo icon -->
+   <div class="demo__logo loading__fade">
+      <a href="/" class="logo__link">
+  
+ <!-- logo icon -->
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
           <style type="text/css">
             .mxd-background {
@@ -156,112 +134,87 @@
 
           </g>
         </svg>
+                     <span class="logo-text">Unavia</span>
         <!-- logo text -->
-        <span class="logo-text">Unavia</span>
       </a>
     </div>
     <!-- Fixed Logo End -->
 
-    <!-- Fixed Color Switch Start -->
+    <!-- Fixed Top Controls Start -->
     <div class="top-controls loading__fade">
-      <button id="color-switcher" class="color-switcher" type="button" role="switch" aria-label="light/dark mode" aria-checked="true"></button>
+                  <button id="color-switcher" class="color-switcher" type="button" role="switch" aria-label="light/dark mode" aria-checked="true"></button>
+
       <a class="btn btn-default-small hover-default-small" href="https://unavia.network" target="_blank">
         <em></em>
         <span class="btn-caption">Login</span>
         <i class="ph ph-user"></i>
       </a>
+
     </div>
-    <!-- Fixed Color Switch End -->
+    <!-- Fixed Top Controls End -->
 
-    <!-- Page Content Start -->
-    <main id="page-content" class="page-content">
+    <!-- Demo Content Start -->
+    <main id="demo__content" class="demo__content">
 
-      <!-- Main Section Start -->
-   <section id="home" class="main home">
-
-  <!-- Main Section Intro Start -->
-  <div class="main__intro">
-
-    <!-- Intro Background Start -->
-    <div class="intro__background intro-bg-01">
-      <div class="intro-bg-01__01" data-speed="0.6">
-        <img src="https://wisdome-public.s3.eu-west-3.amazonaws.com/unavia/planets/indigo.webp" alt="Background Objects">
-        <div class="intro-bg__shadow"></div>
-      </div>
-      <div class="intro-bg-01__02" data-speed="0.8">
-        <img src="https://wisdome-public.s3.eu-west-3.amazonaws.com/unavia/planets/green.webp" alt="Background Objects">
-        <div class="intro-bg__shadow"></div>
-      </div>
-    </div>
-    <!-- Intro Background End -->
-
-    <div class="container-fluid p-0 fullheight-desktop">
-      <div class="row g-0 fullheight-desktop align-items-xl-stretch">
-
-        <!-- Intro Data Line #1 (if needed) Start -->
-        <div class="col-12 col-xl-2"></div>
-        <!-- Intro Data Line #1 (if needed) End -->
+      <!-- Intro Start -->
+      <section id="intro" class="demo__intro">
 
         <!-- Intro Content Start -->
-        <div class="col-12 col-xl-8 fullheight-desktop">
+        <div class="intro__content">
 
-          <!-- Headline Start -->
-          <div id="headline" class="headline d-flex align-items-start flex-column loading-wrap">
-            <h4 class="headline__subtitle space-bottom loading__item" style="margin-bottom: 4px;">Unavia</h4>
-
-            <h2 class="headline__title loading__item">Stop Scrolling, <br>Start Exploring</h2>
-            <p class="headline__subtitle space-top animated-type loading__item" style="margin-top: 22px;">
-       
-             Create Experiences
-              <span id="typed-strings">
-                <b>Worth Returning To.</b>
-              </span>
-              <span id="typed"></span>
-            </p>
-            <h6 class="headline__subtitle space-bottom loading__item" style="margin-top: 20px; margin-bottom: 24px;">Instead of posts that get scrolled past, build interactive spaces where people explore, connect, and collaborate.</h6>
-            
-            <div class="animated-type loading__item">
-  <a class="btn btn-custom-consistent" href="https://unavia.network/request-access"  target="_blank" >
-    <span class="btn-caption">Join The Waiting List</span>
-    <i class="ph ph-rocket"></i>
-    <em></em> <!-- This is for the hover effect -->
-</a>
-</div>
-            <div class="headline__btn loading__item">
-              <a class="btn btn-line-small icon-right slide-right-down" href="#problem">
-                <span class="btn-caption">Scroll for more</span>
-                <i class="ph ph-arrow-down-right"></i>
-              </a>
+          <!-- Intro Background Start -->
+            <div class="intro__background intro-bg-01">
+            <div class="intro-bg-01__01" data-speed="0.6">
+              <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/flowers/1200x1200_bg01.webp" alt="Background Objects">
+              <div class="intro-bg__shadow"></div>
+            </div>
+            <div class="intro-bg-01__03" data-speed="0.8">
+              <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/flowers/1200x1200_bg03.webp" alt="Background Objects">
+            </div>
+            <div class="intro-bg-01__02" data-speed="0.8">
+              <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/flowers/1200x1200_bg02.webp" alt="Background Objects">
+              <div class="intro-bg__shadow"></div>
+            </div>
+            <div class="intro-bg-01__04" data-speed="0.6">
+              <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/flowers/1200x1200_bg04.webp" alt="Background Objects">
             </div>
           </div>
-          <!-- Headline End -->
+          <!-- Intro Background End -->
 
+          <div class="container-fluid p-0 fullheight-desktop">
+            <div class="row g-0 fullheight-desktop align-items-xl-stretch">
+              <div class="col-12 col-xl-2"></div>
+              <div class="col-12 col-xl-8 fullheight-desktop">
+
+                <!-- Headline Start -->
+                <div id="headline" class="headline d-flex align-items-start flex-column loading-wrap">
+                  <!-- <p class="headline__subtitle space-bottom loading__item">Portfolio<br>& resume template</p> -->
+                  <h1 class="headline__title loading__item"> Digital Spaces <br> That Enter<br> The Heart </h1>
+                  <div class="headline__btn loading__item">
+                    <a class="btn btn-line-small icon-right slide-right-down" href="#demo">
+                      <span class="btn-caption">Scroll for more info</span>
+                      <i class="ph ph-arrow-down-left"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- Headline End -->
+
+              </div>
+              <div class="col-12 col-xl-2"></div>
+            </div>
+          </div>
         </div>
         <!-- Intro Content End -->
 
-        <!-- Intro Data Line #2 (if needed) Start -->
-        <div class="col-12 col-xl-2"></div>
-        <!-- Intro Data Line #2 (if needed) End -->
+        <!-- Intro  Media Start -->
+        <div class="intro__media media-grid-bottom">
+          <div class="container-fluid p-0">
+            <div class="row g-0">
+              <div class="col-12 col-xl-2"></div>
+              <div class="col-12 col-xl-8">
 
-      </div>
-    </div>
-  </div>
-  <!-- Main Section Intro End -->
-
-  <!-- Main Section Media Start -->
-  <div class="main__media media-grid-bottom">
-    <div class="container-fluid p-0">
-      <div class="row g-0">
-
-        <!-- Media Data Line #1 (if needed) Start -->
-        <div class="col-12 col-xl-2"></div>
-        <!-- Media Data Line #1 (if needed) End -->
-
-        <!-- Media Content Start -->
-        <div class="col-12 col-xl-8">
-
-          <!-- Content Block - Image Divider Start -->
-          <div class="content__block">
+                <!-- Content Block - Image Divider Start -->
+                 <div class="content__block">
             <div class="container-fluid p-0">
               <div class="row g-0">
                 <div class="col-12">
@@ -272,7 +225,7 @@
                     <div class="video-background">
                       <video class="video" id="inner-video" preload="auto" autoplay="autoplay" loop="loop" muted="muted" playsinline webkit-playsinline poster="img/backgrounds/1920x1080-inner-video-poster.webp">
 
-                        <source type="video/mp4" src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/Video.mp4">
+                        <source type="video/mp4" src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/business_video.mp4">
                         <!-- <source type="video/webm" src="video/video-1.webm">
                         <source type="video/ogv" src="video/video-1.ogv"> -->
                       </video>
@@ -281,49 +234,19 @@
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Content Block - Image Divider End -->
-          <!-- <div class="content__block grid-block">
-            <div class="achievements d-flex flex-column flex-md-row align-items-md-stretch">
-              <div class="achievements__item d-flex flex-column grid-item animate-card-3">
-                <div class="achievements__card">
-                  <p class="achievements__number animate-in-up">27</p>
-                  <p class="achievements__descr animate-in-up">Experiences</p>
                 </div>
+                <!-- Content Block - Image Divider End -->
+
               </div>
-              <div class="achievements__item d-flex flex-column grid-item animate-card-3">
-                <div class="achievements__card">
-                  <p class="achievements__number animate-in-up">3</p>
-                  <p class="achievements__descr animate-in-up">Communities</p>
-                </div>
-              </div>
-              <div class="achievements__item d-flex flex-column grid-item animate-card-3">
-                <div class="achievements__card">
-                  <p class="achievements__number animate-in-up">800+</p>
-                  <p class="achievements__descr animate-in-up">Participants</p>
-                </div>
-              </div>
+              <div class="col-12 col-xl-2"></div>
             </div>
-          </div> -->
+          </div>
         </div>
-        <!-- Media Content End -->
+        <!-- Intro Media End -->
 
-        <!-- Media Data Line #2 (if needed) Start -->
-        <div class="col-12 col-xl-2"></div>
-        <!-- Media Data Line #2 (if needed) End -->
-
-     
-
-      </div>
-    </div>
-  </div>
-  <!-- Main Section Media End -->
-
-</section>
-      <!-- Main Section End -->
-      
-      <!-- Inner Section - Problem - Start -->
-<section id="problem" class="inner inner-grid-bottom about" style="padding-bottom: 0;">
+      </section>
+      <!-- Intro End -->
+<section id="problem" class="inner inner-grid-bottom about" style="padding-bottom: 0;  margin-top: 120px;">
   <div class="inner__wrapper">
     <div class="container-fluid p-0">
       <div class="row g-0">
@@ -334,8 +257,8 @@
             <!-- Content Block - Section Name Start -->
             <div class="content__block name-block">
               <span class="section-name icon-right animate-in-up">
-                <span class="section-name-caption">The Problem is Simple</span>
-                <i class="ph ph-arrow-down-right"></i>
+                <span class="section-name-caption">  The Problem </span>
+                <i class="ph ph-arrow-down-left"></i>
               </span>
             </div>
             <!-- Content Block - Section Name End -->
@@ -344,13 +267,13 @@
         <!-- Inner Section Name End -->
 
         <!-- Inner Section Content Start -->
-        <div class="col-12 col-xl-8">
+  <div class="col-12 col-xl-8">
           <div class="inner__content">
             <!-- Content Block - H2 Section Title Start -->
             <div class="content__block section-text-title" style="margin-bottom: 0;">
               <div class="block__descr">
        
-                <h2 class="reveal-type animate-in-up">Your Content <br> Gets Forgotten </h2>
+                <h2 class="reveal-type animate-in-up"> The Digital World<br> is Drowning in Noise </h2>
               </div>
             </div>
             <!-- Content Block - H2 Section Title End -->
@@ -360,8 +283,25 @@
               <div class="container-fluid p-0">
                 <div class="row g-0 justify-content-between">
                   <div class="col-12 grid-item about-descr pre-title">
-                    <p class="about-descr__text type-basic-160lh animate-in-up">You spend hours creating something meaningful - within 24 hours it's buried in feeds. Comments get lost in threads. Conversations fragment across platforms.
-                       <br> <br> Meanwhile, we're all stuck making the same formats: posts, videos, live streams. 🥱<br> <br> No wonder audiences are getting numb.</p>
+                    <p class="about-descr__text type-basic-160lh animate-in-up">
+
+
+People browse - but don't stay. They react - but don't connect.<br>
+Websites all look the same. Posts disappear. The feeling? Empty.<br><br>
+
+We consume without stopping, scroll without remembering, react without truly being present.<br>
+We don't meet each other - we just consume content.<br><br>
+
+Businesses invest in branding, design, marketing - only to find the results feel flat.<br>
+They sense they're talking to a wall, struggling to reach anyone, eventually forgetting why they started.<br><br>
+
+Community managers build groups, organize events, publish content -<br>
+but participants stay silent, don't return, never truly feel they belong.<br>
+There's no rhythm. No closeness. No connection.<br><br>
+
+At the heart of it all stands one simple question:<br>
+<strong>How do you create a sense of presence in a world that feels so distant?</strong>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -378,1069 +318,168 @@
     </div>
   </div>
 </section>
-<!-- Inner Section - Problem - End -->
-<section id=""   style="margin-top: 80px;" >
-  <div class="inner__wrapper">
-    <div class="container-fluid p-0">
-      <div class="row g-0">
-
-    
-   <!-- Media Fullwidth Divider Start -->
-   <div class="media__fullwidth">
-
-    <!-- Marquee V1 Divider Start -->
-    <div class="items items--gsap">
-      <div class="items__container">
-      
-        <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/1.webp" alt="Image by freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/2.webp" alt="Image by pikisuperstar on Freepik">
-        </div>
-       <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/3.webp" alt="Image by lookstudio on Freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/4.webp" alt="Image by stockking on Freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/5.webp" alt="Image by stockking on Freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/6.webp" alt="Image by shurkin_son on Freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/7.webp" alt="Image by stockking on Freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/8.webp" alt="Image by 8photo on Freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/9.webp" alt="Image by benzoix on Freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/10.webp" alt="Image by KamranAydinov on Freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/11.webp" alt="Image by stockking on Freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/12.webp" alt="Image by freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/13.webp" alt="Image by stockking on Freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/14.webp" alt="Image by freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/15.webp" alt="Image">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/16.webp" alt="Image by stockking on Freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/17.webp" alt="Image">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/18.webp" alt="Image by kroshka__nastya on Freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/19.webp" alt="Image by lookstudio on Freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/20.webp" alt="Image by wayhomestudio on Freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/21.webp" alt="Image by KamranAydinov on Freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/22.webp" alt="Image by haritanita on Freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/23.webp" alt="Image by freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/24.webp" alt="Image by stockking on Freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/25.webp" alt="Image by wayhomestudio on Freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/26.webp" alt="Image by stockking on Freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/27.webp" alt="Image by stockking on Freepik">
-        </div>
-         <div class="item image image-1">
-          <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/tiktok/28.webp" alt="Image by freepik">
-        </div>
-      </div>
-    </div>
-    <!-- Marquee V1 Divider End -->
-
-  </div>
-  <!-- Media Fullwidth Divider End -->
-        <!-- Inner Section Content Start -->
-        <div class="content__block large-text-block" style="margin-top: 60px; margin-bottom: 16px;">
-          <div class="container-fluid p-0">
-            <div class="row g-0">
-              <div class="col-12">
-                <blockquote class="reveal-type animate-in-up" style="text-align: center;">
-                  You need to give people <br> something worth returning to.
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-      
-      <section id="solution" class="inner inner-stack-bottom services">
+      <!-- Live Preview Links Start -->
+   <section id="demo" class="demo__inner inner-type-bottom">
         <div class="inner__wrapper">
           <div class="container-fluid p-0">
             <div class="row g-0">
 
-              <!-- Inner Section Name Start -->
+              <!-- Preview Section Name Start -->
               <div class="col-12 col-xl-2">
                 <div class="inner__name">
 
                   <!-- Content Block - Section Name Start -->
                   <div class="content__block name-block">
-                    <span class="section-name icon-right animate-in-up">
-                      <span class="section-name-caption">The Solution</span>
-                      <i class="ph ph-arrow-down-right"></i>
+                    <span class="section-name icon-left animate-in-up">
+                      <span class="section-name-caption">Our Solutions</span>
+                      <i class="ph ph-arrow-down-left"></i>
                     </span>
                   </div>
                   <!-- Content Block - Section Name Start -->
 
                 </div>
               </div>
-              <!-- Inner Section Name End -->
+              <!-- Preview Section Name End -->
 
-              <!-- Inner Section Content Start -->
+              <!-- Preview Section Content Start -->
               <div class="col-12 col-xl-8">
                 <div class="inner__content">
- 
+
                   <!-- Content Block - H2 Section Title Start -->
-                  <div class="content__block pre-stack-text-block">
+                  <div class="content__block section-grid-title">
                     <div class="block__descr">
-                      <h2 class="reveal-type animate-in-up">Create Experiences,<br> Not Content</h2>
-                      <p class="h2__text type-basic-160lh animate-in-up">Transform your ideas into interactive environments where people don't just consume - they explore, discuss, and collaborate.<br><br> Think less "content that disappears" and more "spaces that evolve" - places people bookmark and return to.
-                       
-                     
-                      </p>
+                      <h2 class="reveal-type animate-in-up"> Digital Presence<br> That Feels Real </h2>
                     </div>
                   </div>
                   <!-- Content Block - H2 Section Title End -->
-
-                  <!-- Content Block - Services/Features Stacking Cards Block Start -->
-                  <div class="content__block">
-                    <div class="stack-wrapper">
-                      <div class="stack-offset"></div>
-                      <div class="services-stack">
-                        <!-- services stack single item -->
-                         <div class="stack-item">
-                          <div class="services-stack__inner">
-                            <div class="services-stack__title">
-                              <h3>From Content <br> to Experience</h3>
-                            </div>
-                            <div class="services-stack__descr">
-                              <i class="ph ph-planet"></i>
-                              <p class="services-stack__text type-basic-160lh">
-                              We help you transform content into active spaces with interactive elements, dynamic formats, collaborative activities, and tools for self-directed exploration.</p>
-                            </div>
-                            <div class="services-stack__image">
-                                   <img class="service-img service-img-s" src="https://wisdome-public.s3.eu-west-3.amazonaws.com/unavia/new/green-w.jpg" alt="Service/Feature Image">
-                              <img class="service-img service-img-m" src="https://wisdome-public.s3.eu-west-3.amazonaws.com/unavia/new/green-m.jpg" alt="Service/Feature Image">
-                            </div>
+<div class="content__block section-text-description" style="margin-bottom: 40px;">
+  <div class="block__descr">
+    <p class="section-descr__text type-basic-160lh animate-in-up">
+      Unavia creates digital spaces where people don't just consume - they're truly present.<br>
+      Instead of posts that disappear and reactions that are forgotten, we build places that feel alive.<br><br>
+      
+      Here people don't just follow - they meet. They don't just react - they create together.<br>
+      Every action leaves a mark, every interaction deepens the connection.<br><br>
+      
+      <strong>This isn't another website or app - it's a place where real things happen.</strong><br>
+      A place where your business becomes an experience, and your community becomes home.
+      
+    </p>
+  </div>
+</div>
+                  <!-- Content Block - Card Start -->
+                  <div class="content__block grid-block">
+                    <div class="container-fluid p-0">
+                      <div class="row g-0">
+                        <!-- card single item -->
+                        <div class="col-12 card grid-item animate-in-up">
+                          <div class="card__item">
+                            <a href="businesses" class="card__link">
+                              <div class="card__image">
+                                <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/spaces/2.webp" alt="Preview">
+                              </div>
+                              <div class="card__caption d-flex justify-content-between align-items-center animate-in-up">
+                                <h5 class="card__text">Businesses</h5>
+                                <span class="card__icon"></span>
+                              </div>
+                            </a>
                           </div>
                         </div>
-
-                        <div class="stack-item">
-                          <div class="services-stack__inner">
-                            <div class="services-stack__title">
-                              <h3>From Scrolling <br> to Participating</h3>
-                            </div>
-                            <div class="services-stack__descr">
-                              <i class="ph ph-butterfly"></i>
-                              <p class="services-stack__text type-basic-160lh">
-                             Instead of passive consumption in endless feeds, people create, share, and influence what happens around them.</p>
-                            </div>
-                            <div class="services-stack__image">
-                                   <img class="service-img service-img-s" src="https://wisdome-public.s3.eu-west-3.amazonaws.com/unavia/new/yellow-w.jpg" alt="Service/Feature Image">
-                              <img class="service-img service-img-m" src="https://wisdome-public.s3.eu-west-3.amazonaws.com/unavia/new/yellow-m.jpg" alt="Service/Feature Image">
-            
-                            </div>
+                        <!-- card single item -->
+                        <div class="col-12 card grid-item animate-in-up">
+                          <div class="card__item">
+                            <a href="communities" class="card__link" >
+                              <div class="card__image">
+                                <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/spaces/3.webp" alt="Preview">
+                              </div>
+                              <div class="card__caption d-flex justify-content-between align-items-center animate-in-up">
+                                <h5 class="card__text">Communities</h5>
+                                <span class="card__icon"></span>
+                              </div>
+                            </a>
                           </div>
                         </div>
-                        <!-- services stack single item -->
-                        <div class="stack-item">
-                          <div class="services-stack__inner">
-                            <div class="services-stack__title">
-                              <h3>From Audience <br> to Community</h3>
-                            </div>
-                            <div class="services-stack__descr">
-                              <i class="ph ph-chats-circle"></i>
-                              <p class="services-stack__text type-basic-160lh">Advanced tools for collaboration, project management, and building real connections between members.
-</p>
-                            </div>
-                            <div class="services-stack__image">
-                              <img class="service-img service-img-s" src="https://wisdome-public.s3.eu-west-3.amazonaws.com/unavia/new/blue-w.jpg" alt="Service/Feature Image">
-                              <img class="service-img service-img-m" src="https://wisdome-public.s3.eu-west-3.amazonaws.com/unavia/new/blue-m.jpg" alt="Service/Feature Image">
-                            </div>
+                        <!-- card single item -->
+                        <!-- <div class="col-12 card grid-item animate-in-up">
+                          <div class="card__item">
+                            <a href="index-demo-3.html" class="card__link" >
+                              <div class="card__image">
+                                <img src="img/demo/screens/3.webp" alt="Preview">
+                              </div>
+                              <div class="card__caption d-flex justify-content-between align-items-center animate-in-up">
+                                <h5 class="card__text text-link">People</h5>
+                                <span class="card__icon"></span>
+                              </div>
+                            </a>
                           </div>
-                        </div>
-                        
-                        <div class="stack-item">
-                          <div class="services-stack__inner">
-                            <div class="services-stack__title">
-                              <h3>From Metrics <br>to Meaning</h3>
-                            </div>
-                            <div class="services-stack__descr">
-                              <i class="ph ph-heart"></i>
-                              <p class="services-stack__text type-basic-160lh">What matters is the quality of interaction and depth of engagement, not distribution speed or click counts.</p>
-                            </div>
-                            <div class="services-stack__image">
-                              <img class="service-img service-img-s" src="https://wisdome-public.s3.eu-west-3.amazonaws.com/unavia/new/red-w.jpg" alt="Service/Feature Image">
-                              <img class="service-img service-img-m" src="https://wisdome-public.s3.eu-west-3.amazonaws.com/unavia/new/red-m.jpg" alt="Service/Feature Image">
-                            </div>
-                          </div>
-                        </div>
+                        </div> -->
                       </div>
                     </div>
                   </div>
-                  <!-- Content Block - Services/Features Stacking Cards Block End -->
+                  <!-- Content Block - Card End -->
                   
                 </div>
               </div>
-              <!-- Inner Section Content End -->
+              <!-- Preview Section Content End -->
 
-              <!-- Inner Section Aside Start -->
+              <!-- Preview Section Aside Start -->
               <div class="col-12 col-xl-2"></div>
-              <!-- Inner Section Aside End -->
+              <!-- Preview Section Aside End -->
 
             </div>
           </div>
         </div>
       </section>
-   
+      <!-- Live Preview Links End -->
 
-
- <!-- Inner Section - Founding Circle - Start -->
- <section id="founding" class="inner inner-grid-bottom portfolio">
-  <div class="inner__wrapper">
-    <div class="container-fluid p-0">
-      <div class="row g-0">
-
-        <!-- Inner Section Name Start -->
-        <div class="col-12 col-xl-2">
-          <div class="inner__name">
-
-            <!-- Content Block - Section Name Start -->
-            <div class="content__block name-block">
-              <span class="section-name icon-right animate-in-up">
-                <span class="section-name-caption">Why This Works</span>
-                <i class="ph ph-arrow-down-right"></i>
-              </span>
-            </div>
-            <!-- Content Block - Section Name Start -->
-
-          </div>
-        </div>
-        <!-- Inner Section Name End -->
-
-        <!-- Inner Section Content Start -->
-        <div class="col-12 col-xl-8">
-          <div class="inner__content">
-
-            <!-- Content Block - H2 Section Title Start -->
-            <div class="content__block section-grid-text-title">
-              <div class="block__descr">
-                <h2 class="reveal-type animate-in-up">Experiences stick</h2>
-                <p class="h2__text type-basic-160lh animate-in-up">When people participate instead of just consuming, they remember how they felt. They come back. They bring friends.<br><br>
-That's how you build loyalty and stand out from the noise.
- </p>
-              </div>
-            </div>
-            <!-- Content Block - H2 Section Title End -->
-
-            
-          </div>
-        </div>
-        <!-- Inner Section Content End -->
-
-        <!-- Inner Section Aside Start -->
-        <div class="col-12 col-xl-2"></div>
-        <!-- Inner Section Aside End -->
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="worlds" class="inner inner-grid-bottom portfolio">
-  <div class="inner__wrapper">
-    <div class="container-fluid p-0">
-      <div class="row g-0">
-
-        <!-- Inner Section Name Start -->
-        <div class="col-12 col-xl-2">
-          <div class="inner__name">
-
-            <!-- Content Block - Section Name Start -->
-            <div class="content__block name-block">
-              <span class="section-name icon-right animate-in-up">
-                <span class="section-name-caption">Explore</span>
-                <i class="ph ph-arrow-down-right"></i>
-              </span>
-            </div>
-            <!-- Content Block - Section Name Start -->
-
-          </div>
-        </div>
-        <!-- Inner Section Name End -->
-
-        <!-- Inner Section Content Start -->
-        <div class="col-12 col-xl-8">
-          <div class="inner__content">
-
-            <!-- Content Block - H2 Section Title Start -->
-            <div class="content__block section-grid-text-title">
-              <div class="block__descr">
-                <h2 class="reveal-type animate-in-up">What People Build</h2>
-<p class="h2__text type-basic-160lh animate-in-up">From listening parties to learning workshops - spaces that bring people together.</p>
-
-              </div>
-            </div>
-            <!-- Content Block - H2 Section Title End -->
-
-            <!-- Content Block - Worlds Gallery Start -->
-            <div class="content__block">
-              <!-- Testimonials Slider Start -->
-              <div class="testimonials-slider">
-                <!-- slider main container -->
-                <div class="swiper-testimonials">
-                  <!-- additional required wrapper -->
-                  <div class="swiper-wrapper">
-                    <!-- single slide -->
-                    <div class="swiper-slide">
-                      <div class="testimonials-card animate-in-up">
-                        <div class="container-fluid p-0 fullheight-l">
-                          <div class="row g-0 d-flex align-items-stretch fullheight-l">
-                            <div class="col-12 col-lg-6 testimonials-card__tdata">
-                              <div class="testimonials-card__tauthor d-flex">
-                                <div class="tauthor__avatar animate-in-up">
-                                  <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/Jade.webp" alt="Review Author">
-                                </div>
-                                <div class="tauthor__info d-flex flex-column justify-content-center">
-                                  <h4 class="tauthor__name animate-in-up">Jade</h4>
-                                  <p class="tauthor__position small animate-in-up">Musician & Producer
-                                  
-                                  </p>
-                                 
-                                </div>
-                              </div>
-                              <div class="testimonials-card__descr animate-in-up">
-                                <p class="type-basic-160lh">Jade hosts intimate virtual listening parties for her new tracks. Fans gather in a cozy digital studio to unlock unreleased songs, vote on future setlists, and join live behind-the-music sessions.</p>
-                              </div>
-                              <div class="testimonials-card__btnholder animate-in-up">
-                                <a class="btn btn-line icon-right slide-right" href="https://www.unavia.network/invite/BPzY1agh/place/YfHkVNn3BonQR7rvEPQr" target="_blank">
-                                  <span class="btn-caption">Visit Jade's Studio</span>
-                                  <i class="ph ph-arrow-right"></i>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="col-12 col-lg-6 testimonials-card__timage fullheight-l">
-                              <div class="timage__inner fullheight-l animate-in-up">
-                                <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/spaces/jade.jpg" alt="Testimonials Image">
-                              </div>
-                              
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- single slide -->
-                    <div class="swiper-slide">
-                      <div class="testimonials-card animate-in-up">
-                        <div class="container-fluid p-0 fullheight-l">
-                          <div class="row g-0 d-flex align-items-stretch fullheight-l">
-                            <div class="col-12 col-lg-6 testimonials-card__tdata">
-                              <div class="testimonials-card__tauthor d-flex">
-                                <div class="tauthor__avatar animate-in-up">
-                                  <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/Max.webp" alt="Review Author">
-                                </div>
-                                <div class="tauthor__info d-flex flex-column justify-content-center">
-                                  <h4 class="tauthor__name animate-in-up">Max</h4>
-                                  <p class="tauthor__position small animate-in-up">Fan Community Manager
-                                  </p>
-                                 
-                                </div>
-                              </div>
-                              <div class="testimonials-card__descr animate-in-up">
-                                <p class="type-basic-160lh">Max built a sprawling, Harry Potter-inspired digital castle. Fans explore magical rooms, attend sorting ceremonies, join trivia duels, and co-write fan fiction in the enchanted writer’s tower.</p>
-                              </div>
-                              <div class="testimonials-card__btnholder animate-in-up">
-                                <a class="btn btn-line icon-right slide-right" href="https://www.unavia.network/invite/BPzY1agh/place/YfHkVNn3BonQR7rvEPQr" target="_blank">
-                                  <span class="btn-caption">Visit The Castle</span>
-                                  <i class="ph ph-arrow-right"></i>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="col-12 col-lg-6 testimonials-card__timage fullheight-l">
-                              <div class="timage__inner fullheight-l animate-in-up">
-                                <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/spaces/max.jpg" alt="Testimonials Image">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                      <div class="testimonials-card animate-in-up">
-                        <div class="container-fluid p-0 fullheight-l">
-                          <div class="row g-0 d-flex align-items-stretch fullheight-l">
-                            <div class="col-12 col-lg-6 testimonials-card__tdata">
-                              <div class="testimonials-card__tauthor d-flex">
-                                <div class="tauthor__avatar animate-in-up">
-                                  <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/Claire.webp" alt="Review Author">
-                                </div>
-                                <div class="tauthor__info d-flex flex-column justify-content-center">
-                                  <h4 class="tauthor__name animate-in-up">Claire</h4>
-                                  <p class="tauthor__position small animate-in-up">Educator & Workshop Facilitator
-                                  </p>
-                                  
-                                </div>
-                              </div>
-                              <div class="testimonials-card__descr animate-in-up">
-                                <p class="type-basic-160lh">Claire turned her leadership course into a multi-room guided adventure. Participants move through themed challenges, group reflections, and interactive activities - no more boring Zoom calls.</p>
-                              </div>
-                              <div class="testimonials-card__btnholder animate-in-up">
-                                <a class="btn btn-line icon-right slide-right" href="https://www.unavia.network/invite/BPzY1agh/place/YfHkVNn3BonQR7rvEPQr" target="_blank">
-                                  <span class="btn-caption">Visit Claire's Workshop</span>
-                                  <i class="ph ph-arrow-right"></i>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="col-12 col-lg-6 testimonials-card__timage fullheight-l">
-                              <div class="timage__inner fullheight-l animate-in-up">
-                                <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/spaces/claire.jpg" alt="Testimonials Image">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                      <div class="testimonials-card animate-in-up">
-                        <div class="container-fluid p-0 fullheight-l">
-                          <div class="row g-0 d-flex align-items-stretch fullheight-l">
-                            <div class="col-12 col-lg-6 testimonials-card__tdata">
-                              <div class="testimonials-card__tauthor d-flex">
-                                <div class="tauthor__avatar animate-in-up">
-                                  <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/Ari.webp" alt="Review Author">
-                                </div>
-                                <div class="tauthor__info d-flex flex-column justify-content-center">
-                                  <h4 class="tauthor__name animate-in-up">Ari</h4>
-                                  <p class="tauthor__position small animate-in-up">Fashion Designer
-
-                                  </p>
-                                
-                                </div>
-                              </div>
-                              <div class="testimonials-card__descr animate-in-up">
-                                <p class="type-basic-160lh">Ari launched a virtual concept store for his new fashion line. Visitors walk through immersive galleries, explore fabric swatches, and join live styling sessions with other fashion lovers.</p>
-                              </div>
-                              <div class="testimonials-card__btnholder animate-in-up">
-                                <a class="btn btn-line icon-right slide-right" href="https://www.unavia.network/invite/BPzY1agh/place/YfHkVNn3BonQR7rvEPQr" target="_blank">
-                                  <span class="btn-caption">Visit Ari's Store</span>
-                                  <i class="ph ph-arrow-right"></i>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="col-12 col-lg-6 testimonials-card__timage fullheight-l">
-                              <div class="timage__inner fullheight-l animate-in-up">
-                                <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/spaces/ari.jpg" alt="Testimonials Image">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                      <div class="testimonials-card animate-in-up">
-                        <div class="container-fluid p-0 fullheight-l">
-                          <div class="row g-0 d-flex align-items-stretch fullheight-l">
-                            <div class="col-12 col-lg-6 testimonials-card__tdata">
-                              <div class="testimonials-card__tauthor d-flex">
-                                <div class="tauthor__avatar animate-in-up">
-                                  <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/Luca.webp" alt="Review Author">
-                                </div>
-                                <div class="tauthor__info d-flex flex-column justify-content-center">
-                                  <h4 class="tauthor__name animate-in-up">Luca</h4>
-                                  <p class="tauthor__position small animate-in-up">Wellbeing Coach
-                                  </p>
-                                  
-                                </div>
-                              </div>
-                              <div class="testimonials-card__descr animate-in-up">
-                                <p class="type-basic-160lh">Luca runs a digital wellness village with meditation domes, journaling retreats, and a calming breathwork cave. Clients say it feels more real than most physical events.</p>
-                              </div>
-                              <div class="testimonials-card__btnholder animate-in-up">
-                                <a class="btn btn-line icon-right slide-right" href="https://www.unavia.network/invite/BPzY1agh/place/YfHkVNn3BonQR7rvEPQr" target="_blank">
-                                  <span class="btn-caption">Visit Luca's Village</span>
-                                  <i class="ph ph-arrow-right"></i>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="col-12 col-lg-6 testimonials-card__timage fullheight-l">
-                              <div class="timage__inner fullheight-l animate-in-up">
-                                <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/spaces/luca.jpg" alt="Testimonials Image">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                      <div class="testimonials-card animate-in-up">
-                        <div class="container-fluid p-0 fullheight-l">
-                          <div class="row g-0 d-flex align-items-stretch fullheight-l">
-                            <div class="col-12 col-lg-6 testimonials-card__tdata">
-                              <div class="testimonials-card__tauthor d-flex">
-                                <div class="tauthor__avatar animate-in-up">
-                                  <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/Ember.webp" alt="Review Author">
-                                </div>
-                                <div class="tauthor__info d-flex flex-column justify-content-center">
-                                  <h4 class="tauthor__name animate-in-up">Ember</h4>
-                                  <p class="tauthor__position small animate-in-up">Indie Game Developer
-                                  </p>
-                                
-                                </div>
-                              </div>
-                              <div class="testimonials-card__descr animate-in-up">
-                                <p class="type-basic-160lh">Ember lets early fans explore her game world scene by scene. Players give feedback in real time, unlock lore in hidden rooms, and co-create new quests with the community.</p>
-                              </div>
-                              <div class="testimonials-card__btnholder animate-in-up">
-                                <a class="btn btn-line icon-right slide-right" href="https://www.unavia.network/invite/BPzY1agh/place/YfHkVNn3BonQR7rvEPQr" target="_blank">
-                                  <span class="btn-caption">Play Ember's Game</span>
-                                  <i class="ph ph-arrow-right"></i>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="col-12 col-lg-6 testimonials-card__timage fullheight-l">
-                              <div class="timage__inner fullheight-l animate-in-up">
-                                <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/spaces/ember.jpg" alt="Testimonials Image">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                      <div class="testimonials-card animate-in-up">
-                        <div class="container-fluid p-0 fullheight-l">
-                          <div class="row g-0 d-flex align-items-stretch fullheight-l">
-                            <div class="col-12 col-lg-6 testimonials-card__tdata">
-                              <div class="testimonials-card__tauthor d-flex">
-                                <div class="tauthor__avatar animate-in-up">
-                                  <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/Theo.webp" alt="Review Author">
-                                </div>
-                                <div class="tauthor__info d-flex flex-column justify-content-center">
-                                  <h4 class="tauthor__name animate-in-up">Theo</h4>
-                                  <p class="tauthor__position small animate-in-up">Author & Storyteller
-                                  </p>
-                                  
-                                </div>
-                              </div>
-                              <div class="testimonials-card__descr animate-in-up">
-                                <p class="type-basic-160lh">Theo’s book comes to life inside Unavia. Readers enter digital chapters, discover secrets between the lines, and join character roleplay nights hosted in his story lounge.</p>
-                              </div>
-                              <div class="testimonials-card__btnholder animate-in-up">
-                                <a class="btn btn-line icon-right slide-right" href="https://www.unavia.network/invite/BPzY1agh/place/YfHkVNn3BonQR7rvEPQr" target="_blank">
-                                  <span class="btn-caption">Join Theo's Story</span>
-                                  <i class="ph ph-arrow-right"></i>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="col-12 col-lg-6 testimonials-card__timage fullheight-l">
-                              <div class="timage__inner fullheight-l animate-in-up">
-                                <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/theo_n.webp" alt="Testimonials Image">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                     <div class="swiper-slide">
-                      <div class="testimonials-card animate-in-up">
-                        <div class="container-fluid p-0 fullheight-l">
-                          <div class="row g-0 d-flex align-items-stretch fullheight-l">
-                            <div class="col-12 col-lg-6 testimonials-card__tdata">
-                              <div class="testimonials-card__tauthor d-flex">
-                                <div class="tauthor__avatar animate-in-up">
-                                  <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/Raya.webp" alt="Review Author">
-                                </div>
-                                <div class="tauthor__info d-flex flex-column justify-content-center">
-                                  <h4 class="tauthor__name animate-in-up">Raya</h4>
-                                  <p class="tauthor__position small animate-in-up">Filmmaker & Director
-                                  </p>
-                                  
-                                </div>
-                              </div>
-                              <div class="testimonials-card__descr animate-in-up">
-                                <p class="type-basic-160lh">Raya created a live experience where fans explore digital film sets, listen to commentary while moving through scenes, and talk to cast members in real-time Q&As.</p>
-                              </div>
-                              <div class="testimonials-card__btnholder animate-in-up">
-                                <a class="btn btn-line icon-right slide-right" href="https://www.unavia.network/invite/BPzY1agh/place/YfHkVNn3BonQR7rvEPQr" target="_blank">
-                                  <span class="btn-caption">Visit Raya's Set</span>
-                                  <i class="ph ph-arrow-right"></i>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="col-12 col-lg-6 testimonials-card__timage fullheight-l">
-                              <div class="timage__inner fullheight-l animate-in-up">
-                                <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/spaces/raya.jpg" alt="Testimonials Image">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                      <div class="testimonials-card animate-in-up">
-                        <div class="container-fluid p-0 fullheight-l">
-                          <div class="row g-0 d-flex align-items-stretch fullheight-l">
-                            <div class="col-12 col-lg-6 testimonials-card__tdata">
-                              <div class="testimonials-card__tauthor d-flex">
-                                <div class="tauthor__avatar animate-in-up">
-                                  <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/Julian.webp" alt="Review Author">
-                                </div>
-                                <div class="tauthor__info d-flex flex-column justify-content-center">
-                                  <h4 class="tauthor__name animate-in-up">Julian</h4>
-                                  <p class="tauthor__position small animate-in-up">Civic Organizer
-                                  </p>
-                                  
-                                </div>
-                              </div>
-                              <div class="testimonials-card__descr animate-in-up">
-                                <p class="type-basic-160lh">Julian built a digital town square where citizens explore current initiatives, vote on proposals, and gather in themed chambers for live discussions with local leaders.</p>
-                              </div>
-                              <div class="testimonials-card__btnholder animate-in-up">
-                                <a class="btn btn-line icon-right slide-right" href="https://www.unavia.network/invite/BPzY1agh/place/YfHkVNn3BonQR7rvEPQr" target="_blank">
-                                  <span class="btn-caption">Visit Julian's Town</span>
-                                  <i class="ph ph-arrow-right"></i>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="col-12 col-lg-6 testimonials-card__timage fullheight-l">
-                              <div class="timage__inner fullheight-l animate-in-up">
-                                <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/spaces/julian.jpg" alt="Testimonials Image">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                      <div class="testimonials-card animate-in-up">
-                        <div class="container-fluid p-0 fullheight-l">
-                          <div class="row g-0 d-flex align-items-stretch fullheight-l">
-                            <div class="col-12 col-lg-6 testimonials-card__tdata">
-                              <div class="testimonials-card__tauthor d-flex">
-                                <div class="tauthor__avatar animate-in-up">
-                                  <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/Isla.webp" alt="Review Author">
-                                </div>
-                                <div class="tauthor__info d-flex flex-column justify-content-center">
-                                  <h4 class="tauthor__name animate-in-up">Isla</h4>
-                                  <p class="tauthor__position small animate-in-up">Visual Artist
-                                  </p>
-                                  
-                                </div>
-                              </div>
-                              <div class="testimonials-card__descr animate-in-up">
-                                <p class="type-basic-160lh">Isla exhibits her digital art in curated rooms that evolve each week. Guests can leave voice reactions, collaborate on pieces in real-time, and attend artist talks in her creative dome.</p>
-                              </div>
-                              <div class="testimonials-card__btnholder animate-in-up">
-                                <a class="btn btn-line icon-right slide-right" href="https://www.unavia.network/invite/BPzY1agh/place/YfHkVNn3BonQR7rvEPQr" target="_blank">
-                                  <span class="btn-caption">Visit Isla's Gallery</span>
-                                  <i class="ph ph-arrow-right"></i>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="col-12 col-lg-6 testimonials-card__timage fullheight-l">
-                              <div class="timage__inner fullheight-l animate-in-up">
-                                <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/spaces/isla.jpg" alt="Testimonials Image">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                      <div class="testimonials-card animate-in-up">
-                        <div class="container-fluid p-0 fullheight-l">
-                          <div class="row g-0 d-flex align-items-stretch fullheight-l">
-                            <div class="col-12 col-lg-6 testimonials-card__tdata">
-                              <div class="testimonials-card__tauthor d-flex">
-                                <div class="tauthor__avatar animate-in-up">
-                                  <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/Nico.webp" alt="Review Author">
-                                </div>
-                                <div class="tauthor__info d-flex flex-column justify-content-center">
-                                  <h4 class="tauthor__name animate-in-up">Nico</h4>
-                                  <p class="tauthor__position small animate-in-up">Brand Experience Designer
-                                  </p>
-                                  
-                                </div>
-                              </div>
-                              <div class="testimonials-card__descr animate-in-up">
-                                <p class="type-basic-160lh">Nico reimagined product marketing by building immersive, interactive brand worlds. Customers explore rooms themed by product categories and attend live ambassador demos.</p>
-                              </div>
-                              <div class="testimonials-card__btnholder animate-in-up">
-                                <a class="btn btn-line icon-right slide-right" href="https://www.unavia.network/invite/BPzY1agh/place/YfHkVNn3BonQR7rvEPQr" target="_blank">
-                                  <span class="btn-caption">Visit Nico's Experience</span>
-                                  <i class="ph ph-arrow-right"></i>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="col-12 col-lg-6 testimonials-card__timage fullheight-l">
-                              <div class="timage__inner fullheight-l animate-in-up">
-                                <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/spaces/nico.jpg" alt="Testimonials Image">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                      <div class="testimonials-card animate-in-up">
-                        <div class="container-fluid p-0 fullheight-l">
-                          <div class="row g-0 d-flex align-items-stretch fullheight-l">
-                            <div class="col-12 col-lg-6 testimonials-card__tdata">
-                              <div class="testimonials-card__tauthor d-flex">
-                                <div class="tauthor__avatar animate-in-up">
-                                  <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/Elena.webp" alt="Review Author">
-                                </div>
-                                <div class="tauthor__info d-flex flex-column justify-content-center">
-                                  <h4 class="tauthor__name animate-in-up">Elena</h4>
-                                  <p class="tauthor__position small animate-in-up">Startup Founder
-                                  </p>
-                                  
-                                </div>
-                              </div>
-                              <div class="testimonials-card__descr animate-in-up">
-                                <p class="type-basic-160lh">Elena uses Unavia as her product’s onboarding world. Instead of tooltips and boring docs, users walk through a guided experience that blends her product vision with intuitive exploration.</p>
-                              </div>
-                              <div class="testimonials-card__btnholder animate-in-up">
-                                <a class="btn btn-line icon-right slide-right" href="https://www.unavia.network/invite/BPzY1agh/place/YfHkVNn3BonQR7rvEPQr" target="_blank">
-                                  <span class="btn-caption">Learn about Elena's Product</span>
-                                  <i class="ph ph-arrow-right"></i>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="col-12 col-lg-6 testimonials-card__timage fullheight-l">
-                              <div class="timage__inner fullheight-l animate-in-up">
-                                <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/creators/spaces/elena.jpg" alt="Testimonials Image">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                    
-                  </div>
-                  <!-- navigation buttons -->
-                  <div class="swiper-button-prev mxd-slider-btn mxd-slider-btn-square-prev animate-in-up">
-                    <a class="btn btn-line icon-left slide-left" href="#0">
-                      <i class="ph ph-arrow-left"></i>
-                      <span class="btn-caption">Prev</span>
-                    </a> 
-                  </div>
-                  <div class="swiper-button-next mxd-slider-btn mxd-slider-btn-square-next animate-in-up">
-                    <a class="btn btn-line icon-right slide-right" href="#0">
-                      <span class="btn-caption">Next</span>
-                      <i class="ph ph-arrow-right"></i>
-                    </a>
-                  </div>
-                  <!-- pagination -->
-                  <div class="swiper-pagination mxd-swiper-pagination-fraction"></div>
-                </div>
-              </div>
-              <!-- Testimonials Slider End -->
-            </div>
-            <!-- Content Block - Worlds Gallery End -->
-            
-          </div>
-        </div>
-        <!-- Inner Section Content End -->
-
-        <!-- Inner Section Aside Start -->
-        <div class="col-12 col-xl-2"></div>
-        <!-- Inner Section Aside End -->
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Inner Section - Founding Circle - End -->
- <section id="start" class="inner inner-grid-bottom portfolio">
-  <div class="inner__wrapper">
-    <div class="container-fluid p-0">
-      <div class="row g-0">
-
-        <!-- Inner Section Name Start -->
-        <div class="col-12 col-xl-2">
-          <div class="inner__name">
-
-            <!-- Content Block - Section Name Start -->
-            <div class="content__block name-block">
-              <span class="section-name icon-right animate-in-up">
-                <span class="section-name-caption">Ready To Start?</span>
-                <i class="ph ph-arrow-down-right"></i>
-              </span>
-            </div>
-            <!-- Content Block - Section Name Start -->
-
-          </div>
-        </div>
-        <!-- Inner Section Name End -->
-
-        <!-- Inner Section Content Start -->
-        <div class="col-12 col-xl-8">
-          <div class="inner__content">
-
-            <!-- Content Block - H2 Section Title Start -->
-            <div class="content__block section-grid-text-title">
-              <div class="block__descr">
-                <h2 class="reveal-type animate-in-up">Turn Ideas Into Experiences</h2>
-                <h4 class="h2__text type-basic-160lh animate-in-up">Here's how it works:
-                </h4>
-                 <h4 class="h2__text type-basic-160lh animate-in-up">
-                 1. 📝 Sign up to Unavia (free)<br><br>
-                 2. 🏛️ Choose your space type<br><br>
-                 3. 🎨 Design easily with drag-and-drop tools <br><br>
-                 4. 🎯 Choose your plan<br><br>
-                 5. 🚀 Go live in under 15 minutes
-                </h4>
-              </div>
-            </div>
-            <!-- Content Block - H2 Section Title End -->
-
-            <!-- Content Block - Founding Benefits Start -->
-           
-
-               <div class="content__block grid-block">
-                <div class="container-fluid p-0">
-                  <div class="row g-0 align-items-stretch cards">
-                    
-                    <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
-                      <div class="cards__card d-flex flex-column">
-                        <div class="cards__descr">
-                          <h3 class="cards__title animate-in-up">Circle</h3>
-                          <h5 class="cards__title animate-in-up">Free Forever</h5>
-
-                          <p class="cards__text type-basic-160lh animate-in-up">A space for small-group exploration - perfect for trying with friends and building your first interactive environments.</p>
-                        </div>
-                        <div class="cards__image d-flex animate-in-up position-relative">
-                          <img src="https://wisdome-public.s3.eu-west-3.amazonaws.com/unavia/uni/individuals.jpg" alt="Individuals">
-                          <div class="cards__btn animate-in-up position-absolute" style="bottom: 20px; left: 20px; z-index: 10;">
-                          
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- services cards grid single item -->
-                    <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
-                      <div class="cards__card d-flex flex-column">
-                        <div class="cards__descr">
-                          <h3 class="cards__title animate-in-up">Gathering</h3>
-                           <h5 class="cards__title animate-in-up">$25 - Per Month</h5>
-
-                          <p class="cards__text type-basic-160lh animate-in-up">Scale your space and host interactive sessions - ideal for creators ready to grow and deliver shared experiences.</p>
-                        </div>
-                        <div class="cards__image d-flex animate-in-up position-relative">
-                          <img src="https://wisdome-public.s3.eu-west-3.amazonaws.com/unavia/uni/builders.jpg" alt="Creators & Builders">
-                          <div class="cards__btn animate-in-up position-absolute" style="bottom: 20px; left: 20px; z-index: 10;">
-                           
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <!-- services grid cards single item -->
-                    <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
-                      <div class="cards__card d-flex flex-column">
-                        <div class="cards__descr">
-                          <h3 class="cards__title animate-in-up">Stage</h3>
-                           <h5 class="cards__title animate-in-up">$50 - Per Month</h5>
-                          <p class="cards__text type-basic-160lh animate-in-up">Unlock the full power with large-scale interaction, monetization tools, and deep community engagement features.</p>
-                        </div>
-                        <div class="cards__image d-flex animate-in-up position-relative">
-                          <img src="https://wisdome-public.s3.eu-west-3.amazonaws.com/unavia/uni/community.jpg" alt="Communities">
-                          <div class="cards__btn animate-in-up position-absolute" style="bottom: 20px; left: 20px; z-index: 10;">
-                          
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                
-                    <!-- services grid cards single item -->
-                    <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
-                      <div class="cards__card d-flex flex-column">
-                        <div class="cards__descr">
-                          <h3 class="cards__title animate-in-up">Grand</h3>
-                          <h5 class="cards__title animate-in-up">Custom Pricing</h5>
-                          <p class="cards__text type-basic-160lh animate-in-up">An all-in-one environment for building large-scale structures and experiences, with advanced tools, integrations, and personalization.</p>
-                        </div>
-                        <div class="cards__image d-flex animate-in-up position-relative">
-                          <img src="https://wisdome-public.s3.eu-west-3.amazonaws.com/unavia/uni/organizations.jpg" alt="Institutions & Organizations">
-                          <div class="cards__btn animate-in-up position-absolute" style="bottom: 20px; left: 20px; z-index: 10;">
-                           
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-
-            <!-- Content Block - Founding Benefits End -->
-            <div class="col-12 form__item animate-in-up" style="margin-top: 80px; justify-content: center; display: flex;">
-  
-                              <a class="btn btn-default hover-default" href="https://unavia.network/request-access" target="_blank" >
-                               
-                                <span class="btn-caption">Join The Waiting List</span>
-                              </a>
-            </div>
-            
-          </div>
-
-         
-        </div>
-        <!-- Inner Section Content End -->
-
-        <!-- Inner Section Aside Start -->
-        <div class="col-12 col-xl-2"></div>
-        <!-- Inner Section Aside End -->
-
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Inner Section - Worlds of Unavia - Start -->
-
-<!-- Inner Section - Worlds of Unavia - End -->
-
-
-
-      <!-- Inner Section - Contact - Start -->
-      <section id="contact" class="inner contact inner-grid-bottom no-padding-bottom">
+      <!-- Purchase Section Start -->
+      <div id="purchase" class="demo__inner inner-grid-bottom no-padding-bottom">
         <div class="inner__wrapper">
-           <div class="container-fluid p-0">
+
+          <!-- Inner Section Off-canvas Content (Fullwidth Social Media Marquee & Lines) Start -->
+          <div class="container-fluid p-0">
+            <div class="row g-0">
+              <div class="col-12">
+
+              
+                <!-- Content Block - Promo with SVG Objects End -->
+
+              </div>
+            </div>
+          </div>
+          <!-- Inner Section Off-canvas Content (Fullwidth Social Media Marquee & Lines) Start -->
+
+          <div class="container-fluid p-0">
             <div class="row g-0">
 
-              <!-- Inner Section Name Start -->
-              <div class="col-12 col-xl-2">
-                <div class="inner__name">
-
-                  <!-- Content Block - Section Name Start -->
-                
-                  <!-- Content Block - Section Name Start -->
-
-                </div>
-              </div>
-              <!-- Inner Section Name End -->
+              <!-- Inner Section Aside Start -->
+              <div class="col-12 col-xl-2"></div>
+              <!-- Inner Section Aside End -->
 
               <!-- Inner Section Content Start -->
               <div class="col-12 col-xl-8">
-                <div class="inner__content">
-
-                 
-              
-                  <!-- Content Block - Contact Data Start -->
-                  <div class="content__block grid-block">
-                    <div class="container-fluid p-0 contact-data">
-                      <div class="row g-0">
+                <div class="container-fluid p-0">
+                  <div class="row g-0">
+        
+                    <div class="col-12">
+                      <div class="footer__footercta d-flex flex-column">
+                        <div class="footercta__caption d-flex justify-content-center text-center animate-in-up">
+                        </div>
+                        <div class="footercta__cta d-flex justify-content-center animate-in-up">
                        
-                        
-                        <div class="col-12 col-md-6 col-lg-3 contact-data__item grid-item">
-                          <p class="contact-data__title tagline-chapter animate-in-up">Info</p>
-                          <p class="contact-data__text small type-basic-160lh">
-                            <!-- <a class="link-small-160lh animate-in-up" href="https://quasar-crafter-a71.notion.site/Unavia-The-Unity-Network-1fdc3c704c358006b950cec15139f6af?pvs=74" target="_blank" >Vision Paper</a>
-                             <br> -->
-                            <!-- <a class="link-small-160lh animate-in-up" href="https://quasar-crafter-a71.notion.site/Creator-Earnings-201c3c704c3580ae8b54cb016430d19e?pvs=73" target="_blank">Creator Earnings</a>
-                            <br> -->
-                            <a class="link-small-160lh animate-in-up" href="https://www.unavia.network/invite/6303Zzhq/place/VCimGL3WvW0qvbGYU4kn" target="_blank">Investors Hub</a>
-                            <br>
-                            <a class="link-small-160lh animate-in-up" href="https://quasar-crafter-a71.notion.site/Unavia-Careers-1ffc3c704c3580c1afddcfac82b35b99?pvs=74" target="_blank" >Careers</a>
-                            <!-- <br>
-                            <a class="link-small-160lh animate-in-up" href="https://quasar-crafter-a71.notion.site/Unavia-FAQ-1fdc3c704c35803f9fdad41ad3f42e40?pvs=73" target="_blank" >FAQ</a> -->
-
-                          </p>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 contact-data__item grid-item">
-                          <p class="contact-data__title tagline-chapter animate-in-up">Legal</p>
-                          <p class="contact-data__text small type-basic-160lh">
-                            <a class="link-small-160lh animate-in-up" href="https://quasar-crafter-a71.notion.site/Terms-of-Service-201c3c704c3580daa0e2e5bc14073027?pvs=73" target="_blank">Terms of Service</a>
-                            <br>
-                            <a class="link-small-160lh animate-in-up" href="https://quasar-crafter-a71.notion.site/Privacy-Policy-201c3c704c35808091e6ce0dfda07e2b?pvs=73" target="_blank">Privacy Policy</a>
-                          </p>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 contact-data__item grid-item">
-                          <p class="contact-data__title tagline-chapter animate-in-up">Social</p>
-                          <p class="contact-data__text small type-basic-160lh">
-                                  <a class="link-small-160lh animate-in-up" href="https://www.instagram.com/unavia.network" target="_blank" >Instagram</a>
-                            <br>
-
-                                     <a class="link-small-160lh animate-in-up" href="https://www.facebook.com/unavia.network" target="_blank">Facebook</a>
-                            <br>
-     <a class="link-small-160lh animate-in-up" href="https://www.youtube.com/@unavia.network" target="_blank">Youtube</a>
-                                 <br>
-                                                           <a class="link-small-160lh animate-in-up" href="https://www.linkedin.com/company/unavia-network"  target="_blank">Linkedin</a>
-
-                                <br>
-
-                                                           <a class="link-small-160lh animate-in-up" href="https://x.com/UnaviaNetwork" target="_blank">X</a>
-                       
-                      
-                  
-                        
-                          </p>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 contact-data__item grid-item">
-                          <p class="contact-data__title tagline-chapter animate-in-up">Contact</p>
-                          <p class="contact-data__text small type-basic-160lh">
-                            <a class="link-small-160lh animate-in-up" href="mailto:team@unavia.network?subject=I%20want%20to%20contact">team@unavia.network</a>
-                            <br>
-                           <a class="link-small-160lh animate-in-up" href="https://calendly.com/team-unavia/30min" target="_blank">Book a Demo</a>
-
-                            <!-- <a class="link-small-160lh animate-in-up" href="tel:+15104570211">+972 54-234-5410</a> -->
-                          </p>
                         </div>
                       </div>
                     </div>
+        
+                    <div class="col-12">
+                      <div class="footer__links d-flex flex-column text-center text-lg-left flex-lg-row justify-content-lg-between">
+        
+                      
+        
+                      </div>
+                    </div>
+        
                   </div>
-                  <!-- Content Block - Contact Data End -->
-                  
                 </div>
               </div>
               <!-- Inner Section Content End -->
@@ -1451,141 +490,25 @@ That's how you build loyalty and stand out from the noise.
 
             </div>
           </div>
-          
-          <!-- Inner Section Off-canvas Content (Footer Marquee Block) Start -->
-          <div class="footer footer-marquee">
-            <div class="container-fluid p-0">
-              <div class="row g-0">
-                <div class="col-12">
-
-                  <!-- Content Block - Footer Marquee Start -->
-                  <div class="content__block no-padding">
-                    <div class="items items--gsap">
-                      <div class="items__container">
-                        <!-- single item -->
-                        <div class="item item-regular text">
-                          <a class="item__text" href="mailto:team@unavia.network?subject=I've%20got%20an%20idea">Got an idea?</a>
-                          <div class="item__image">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.3 93.1" fill="currentColor">
-                              <g>
-                                <rect x="45.7" class="st0" width="1" height="93.1"/>
-                                <rect x="45.7" y="0" transform="matrix(0.8412 -0.5407 0.5407 0.8412 -17.8476 32.3497)" class="st0" width="1" height="93.1"/>
-                                <rect x="45.7" y="0" transform="matrix(0.4155 -0.9096 0.9096 0.4155 -15.3764 69.2119)" class="st0" width="1" height="93.1"/>
-                                <rect x="-0.4" y="46.1" transform="matrix(0.9898 -0.1425 0.1425 0.9898 -6.1646 7.0506)" class="st0" width="93.1" height="1"/>
-                                <rect x="-0.4" y="46.1" transform="matrix(0.7556 -0.655 0.655 0.7556 -19.2157 41.618)" class="st0" width="93.1" height="1"/>
-                                <rect x="-0.4" y="46.1" transform="matrix(0.2812 -0.9597 0.9597 0.2812 -11.5032 77.7858)" class="st0" width="93.1" height="1"/>
-                                <rect x="45.7" y="0" transform="matrix(0.9595 -0.2817 0.2817 0.9595 -11.2479 14.8866)" class="st0" width="1" height="93.1"/>
-                                <rect x="45.7" y="0" transform="matrix(0.6549 -0.7557 0.7557 0.6549 -19.2631 50.9572)" class="st0" width="1" height="93.1"/>
-                                <rect x="45.7" y="0" transform="matrix(0.1423 -0.9898 0.9898 0.1423 -6.4999 85.629)" class="st0" width="1" height="93.1"/>
-                                <rect x="-0.4" y="46.1" transform="matrix(0.9097 -0.4153 0.4153 0.9097 -15.1716 23.381)" class="st0" width="93.1" height="1"/>
-                                <rect x="-0.4" y="46.1" transform="matrix(0.5411 -0.8409 0.8409 0.5411 -17.9774 60.1901)" class="st0" width="93.1" height="1"/>
-                              </g>
-                            </svg>
-                          </div>
-                        </div>
-                        <!-- single item -->
-                        <div class="item item-regular text">
-                          <a class="item__text" href="mailto:team@unavia.network?subject=I'm%20ready%20to%20build">Ready to build?</a>
-                          <div class="item__image">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.3 93.1" fill="currentColor">
-                              <g>
-                                <rect x="45.7" class="st0" width="1" height="93.1"/>
-                                <rect x="45.7" y="0" transform="matrix(0.8412 -0.5407 0.5407 0.8412 -17.8476 32.3497)" class="st0" width="1" height="93.1"/>
-                                <rect x="45.7" y="0" transform="matrix(0.4155 -0.9096 0.9096 0.4155 -15.3764 69.2119)" class="st0" width="1" height="93.1"/>
-                                <rect x="-0.4" y="46.1" transform="matrix(0.9898 -0.1425 0.1425 0.9898 -6.1646 7.0506)" class="st0" width="93.1" height="1"/>
-                                <rect x="-0.4" y="46.1" transform="matrix(0.7556 -0.655 0.655 0.7556 -19.2157 41.618)" class="st0" width="93.1" height="1"/>
-                                <rect x="-0.4" y="46.1" transform="matrix(0.2812 -0.9597 0.9597 0.2812 -11.5032 77.7858)" class="st0" width="93.1" height="1"/>
-                                <rect x="45.7" y="0" transform="matrix(0.9595 -0.2817 0.2817 0.9595 -11.2479 14.8866)" class="st0" width="1" height="93.1"/>
-                                <rect x="45.7" y="0" transform="matrix(0.6549 -0.7557 0.7557 0.6549 -19.2631 50.9572)" class="st0" width="1" height="93.1"/>
-                                <rect x="45.7" y="0" transform="matrix(0.1423 -0.9898 0.9898 0.1423 -6.4999 85.629)" class="st0" width="1" height="93.1"/>
-                                <rect x="-0.4" y="46.1" transform="matrix(0.9097 -0.4153 0.4153 0.9097 -15.1716 23.381)" class="st0" width="93.1" height="1"/>
-                                <rect x="-0.4" y="46.1" transform="matrix(0.5411 -0.8409 0.8409 0.5411 -17.9774 60.1901)" class="st0" width="93.1" height="1"/>
-                              </g>
-                            </svg>
-                          </div>
-                        </div>
-                        <!-- single item -->
-                        <div class="item item-regular text">
-                          <a class="item__text" href="mailto:team@unavia.network?subject=I've%20got%20a%20vision">Got a vision?</a>
-                          <div class="item__image">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.3 93.1" fill="currentColor">
-                              <g>
-                                <rect x="45.7" class="st0" width="1" height="93.1"/>
-                                <rect x="45.7" y="0" transform="matrix(0.8412 -0.5407 0.5407 0.8412 -17.8476 32.3497)" class="st0" width="1" height="93.1"/>
-                                <rect x="45.7" y="0" transform="matrix(0.4155 -0.9096 0.9096 0.4155 -15.3764 69.2119)" class="st0" width="1" height="93.1"/>
-                                <rect x="-0.4" y="46.1" transform="matrix(0.9898 -0.1425 0.1425 0.9898 -6.1646 7.0506)" class="st0" width="93.1" height="1"/>
-                                <rect x="-0.4" y="46.1" transform="matrix(0.7556 -0.655 0.655 0.7556 -19.2157 41.618)" class="st0" width="93.1" height="1"/>
-                                <rect x="-0.4" y="46.1" transform="matrix(0.2812 -0.9597 0.9597 0.2812 -11.5032 77.7858)" class="st0" width="93.1" height="1"/>
-                                <rect x="45.7" y="0" transform="matrix(0.9595 -0.2817 0.2817 0.9595 -11.2479 14.8866)" class="st0" width="1" height="93.1"/>
-                                <rect x="45.7" y="0" transform="matrix(0.6549 -0.7557 0.7557 0.6549 -19.2631 50.9572)" class="st0" width="1" height="93.1"/>
-                                <rect x="45.7" y="0" transform="matrix(0.1423 -0.9898 0.9898 0.1423 -6.4999 85.629)" class="st0" width="1" height="93.1"/>
-                                <rect x="-0.4" y="46.1" transform="matrix(0.9097 -0.4153 0.4153 0.9097 -15.1716 23.381)" class="st0" width="93.1" height="1"/>
-                                <rect x="-0.4" y="46.1" transform="matrix(0.5411 -0.8409 0.8409 0.5411 -17.9774 60.1901)" class="st0" width="93.1" height="1"/>
-                              </g>
-                            </svg>
-                          </div>
-                        </div>
-                        <!-- single item -->
-                        <div class="item item-regular text">
-                          <a class="item__text" href="mailto:team@unavia.network?subject=I%20want%20to%20create">Want to Create?</a>
-                          <div class="item__image">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.3 93.1" fill="currentColor">
-                              <g>
-                                <rect x="45.7" class="st0" width="1" height="93.1"/>
-                                <rect x="45.7" y="0" transform="matrix(0.8412 -0.5407 0.5407 0.8412 -17.8476 32.3497)" class="st0" width="1" height="93.1"/>
-                                <rect x="45.7" y="0" transform="matrix(0.4155 -0.9096 0.9096 0.4155 -15.3764 69.2119)" class="st0" width="1" height="93.1"/>
-                                <rect x="-0.4" y="46.1" transform="matrix(0.9898 -0.1425 0.1425 0.9898 -6.1646 7.0506)" class="st0" width="93.1" height="1"/>
-                                <rect x="-0.4" y="46.1" transform="matrix(0.7556 -0.655 0.655 0.7556 -19.2157 41.618)" class="st0" width="93.1" height="1"/>
-                                <rect x="-0.4" y="46.1" transform="matrix(0.2812 -0.9597 0.9597 0.2812 -11.5032 77.7858)" class="st0" width="93.1" height="1"/>
-                                <rect x="45.7" y="0" transform="matrix(0.9595 -0.2817 0.2817 0.9595 -11.2479 14.8866)" class="st0" width="1" height="93.1"/>
-                                <rect x="45.7" y="0" transform="matrix(0.6549 -0.7557 0.7557 0.6549 -19.2631 50.9572)" class="st0" width="1" height="93.1"/>
-                                <rect x="45.7" y="0" transform="matrix(0.1423 -0.9898 0.9898 0.1423 -6.4999 85.629)" class="st0" width="1" height="93.1"/>
-                                <rect x="-0.4" y="46.1" transform="matrix(0.9097 -0.4153 0.4153 0.9097 -15.1716 23.381)" class="st0" width="93.1" height="1"/>
-                                <rect x="-0.4" y="46.1" transform="matrix(0.5411 -0.8409 0.8409 0.5411 -17.9774 60.1901)" class="st0" width="93.1" height="1"/>
-                              </g>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Content Block - Footer Marquee End -->
-  
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Inner Section Off-canvas Content (Footer Marquee Block) Start -->
 
         </div>
-      </section>
-      <!-- Inner Section - Contact - End -->
+      </div>
+      <!-- Purchase Section End -->
 
     </main>
-    <!-- Page Content End -->
+    <!-- Demo Content End -->
 
     <!-- Bottom Background Images Start -->
     <div class="bottom__background bottom-bg-01">
-      <div class="bottom-bg-01__02 animate-card-2">
-        <img src="https://wisdome-public.s3.eu-west-3.amazonaws.com/unavia/planets/orange.webp" alt="Template background image">
+      <div class="bottom-bg-01__02">
+        <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/flowers/1200x1200_bg05.webp" alt="Template background image">
       </div>
-      <div class="bottom-bg-01__01 animate-card-2">
-        <img src="https://wisdome-public.s3.eu-west-3.amazonaws.com/unavia/planets/red.webp" alt="Template background image">
+      <div class="bottom-bg-01__01">
+        <img src="https://unavia-media.s3.eu-west-3.amazonaws.com/website/flowers/1200x1200_bg06.webp" alt="Template background image">
       </div>
     </div>
     <!-- Bottom Background Images End -->
-<div class="footer-signature">
-  <div class="container-fluid p-0">
-    <div class="row g-0">
-      <!-- <div class="col-12 text-center">
-     
-          Crafted with <i class="ph ph-heart" style="color: #ff4757;"></i> by 
-          <a href="https://www.instagram.com/timeis.art" target="_blank" class="link-small-160lh" style="text-decoration: underline; position: relative; display: inline-block;">timeis.art</a>
-        </p>
-      </div> -->
-    </div>
-  </div>
-</div>
+
     <!-- Mobile Menu Bottom Placeholder Start -->
     <div class="header-offset"></div>
     <!-- Mobile Menu Bottom Placeholder End -->
@@ -1595,79 +518,12 @@ That's how you build loyalty and stand out from the noise.
       <i class="ph ph-arrow-up"></i>
     </a>
     <!-- To Top Button End -->
-
-    <!-- Root element of PhotoSwipe. Must have class pswp. -->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-      <!-- Background of PhotoSwipe.
-      It's a separate element, as animating opacity is faster than rgba(). -->
-      <div class="pswp__bg"></div>
-
-      <!-- Slides wrapper with overflow:hidden. -->
-      <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-        </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-          <div class="pswp__top-bar">
-
-            <!--  Controls are self-explanatory. Order can be changed. -->
-
-            <div class="pswp__counter"></div>
-
-            <button class="pswp__button pswp__button--close link-s" title="Close (Esc)"></button>
-
-            <button class="pswp__button pswp__button--share link-s" title="Share"></button>
-
-            <button class="pswp__button pswp__button--fs link-s" title="Toggle fullscreen"></button>
-
-            <button class="pswp__button pswp__button--zoom link-s" title="Zoom in/out"></button>
-
-            <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-            <!-- element will get class pswp__preloader-active when preloader is running -->
-            <div class="pswp__preloader">
-              <div class="pswp__preloader__icn">
-                <div class="pswp__preloader__cut">
-                  <div class="pswp__preloader__donut"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-              <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left link-s" title="Previous (arrow left)"></button>
-
-            <button class="pswp__button pswp__button--arrow--right link-s" title="Next (arrow right)"></button>
-
-            <div class="pswp__caption">
-              <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
+ 
     <!-- Load Scripts Start -->
-    <script src="js/libs.min.js"></script>
-    <script src="js/gallery-init.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/demo/libsdemo.min.js"></script>
+    <script src="js/demo/demo.js"></script>
     <!-- Load Scripts End -->
     
   </body>
-  <script>
-  
-  </script>
+
 </html>

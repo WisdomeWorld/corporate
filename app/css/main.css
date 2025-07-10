@@ -2612,13 +2612,13 @@ form textarea:required:valid {
   top: -160px;
   right: -100px;
   width: 320px;
-  height: 320px;
+  height: 420px;
 }
 @media only screen and (min-width: 768px) {
   .intro-bg-01__01 {
     top: -320px;
     right: -20px;
-    width: 500px;
+    width: 400px;
     height: 500px;
   }
 }
@@ -2631,7 +2631,7 @@ form textarea:required:valid {
   .intro-bg-01__01 {
     top: -160px;
     right: -80px;
-    width: 660px;
+    width: 500px;
     height: 660px;
   }
 }
@@ -2639,7 +2639,7 @@ form textarea:required:valid {
   .intro-bg-01__01 {
     top: -200px;
     right: -120px;
-    width: 770px;
+    width: 570px;
     height: 770px;
   }
 }
@@ -2673,7 +2673,7 @@ form textarea:required:valid {
     bottom: -40px;
     left: -96px;
     width: 300px;
-    height: 300px;
+    height: 400px;
   }
 }
 @media only screen and (min-width: 1400px) {
@@ -2681,7 +2681,7 @@ form textarea:required:valid {
     bottom: -10px;
     left: -86px;
     width: 360px;
-    height: 360px;
+    height: 500px;
   }
 }
 @media only screen and (min-width: 1600px) {
@@ -2689,7 +2689,7 @@ form textarea:required:valid {
     bottom: -60px;
     left: -175px;
     width: 500px;
-    height: 500px;
+    height: 600px;
   }
 }
 
@@ -3107,6 +3107,10 @@ form textarea:required:valid {
 @media only screen and (min-width: 1600px) {
   .headline__btn {
     margin-top: 10.1rem;
+  }
+}@media only screen and (min-width: 1600px) and (max-height: 840px) {
+  .headline__btn {
+    margin-top: 4rem; /* Different value for small height */
   }
 }
 
