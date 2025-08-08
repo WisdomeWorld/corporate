@@ -4042,7 +4042,7 @@ form textarea:required:valid {
   }
 }
 
-.divider-image-xl,
+/* .divider-image-xl,
 .divider-video-xl {
   background-repeat: no-repeat;
   background-position: center;
@@ -4072,6 +4072,39 @@ form textarea:required:valid {
   .divider-image-xl,
   .divider-video-xl {
     height: 800px;
+  }
+} */
+
+.divider-image-xl,
+.divider-video-xl {
+  background-repeat: no-repeat;
+  background-position: center;
+  -moz-background-size: cover;
+       background-size: cover;
+  height: 120px;
+}
+@media only screen and (min-width: 768px) {
+  .divider-image-xl,
+  .divider-video-xl {
+    height: 120px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .divider-image-xl,
+  .divider-video-xl {
+    height: 120px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .divider-image-xl,
+  .divider-video-xl {
+    height: 120px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .divider-image-xl,
+  .divider-video-xl {
+    height: 120px;
   }
 }
 
